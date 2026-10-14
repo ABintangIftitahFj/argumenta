@@ -1,11 +1,52 @@
 @import "tailwindcss";
 
-:root {
-    font-family: Inter, ui-sans-serif, system-ui, sans-serif;
-    color: #17352c;
-    background: #fffaf0;
+@theme {
+  --color-primary: #006c45;
+  --color-primary-container: #20b87a;
+  --color-primary-light: #e8f8f1;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #004128;
+  --color-background-cream: #F9FAF3;
+  --color-surface-white: #FFFFFF;
+  --color-surface-subtle: #F1F4EC;
+  --color-surface-dim: #c6e0d5;
+  --color-secondary: #33675b;
+  --color-secondary-container: #b7eede;
+  --color-on-secondary-container: #3a6d61;
+  --color-accent-orange: #FFB14A;
+  --color-accent-purple: #8668E8;
+  --color-accent-coral: #EF6D6D;
+  --color-text-muted: #6C7973;
+  --color-border-clean: #DDE7DE;
+  --color-on-surface: #091f19;
+  --color-on-surface-variant: #3d4a41;
 }
 
-body {
+@layer base {
+  :root {
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+    color: #091f19;
+    background-color: #F9FAF3;
+  }
+
+  body {
     margin: 0;
+    min-height: 100vh;
+    background-color: #F9FAF3;
+    color: #091f19;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, ::before, ::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  :focus-visible {
+    outline: 2px solid #20b87a;
+    outline-offset: 2px;
+  }
 }

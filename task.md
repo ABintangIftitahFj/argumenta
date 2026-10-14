@@ -21,17 +21,15 @@ Source: [plan/prd.md](plan/prd.md)
 - [x] Acceptance criteria terukur dan sudah dicentang.
 - [x] Verification command dijalankan dan hasil dicatat.
 - [x] Knowledge graph diperbarui.
-- [ ] Commit dibuat di `prod`.
-- [ ] Push ke GitHub berhasil dan CI lulus.
+- [x] Commit dibuat di `prod`.
+- [x] Push ke GitHub berhasil dan CI lulus.
 
 ## Current execution
 
-- Task aktif: `F1 — Foundation` (DONE, unblocking `F2 — App shell`).
-- Hasil Verifikasi:
-  - Docker daemon access: Berhasil diperbaiki.
-  - `docker compose config`: PASS.
-  - `composer validate --strict`: PASS.
-  - `docker build --tag argumenta:ci .`: PASS.
-  - `php artisan test`: PASS (1 test, 12 assertions).
-  - `docker compose up -d`: PASS (App running on port 8000, MySQL 8.4 healthy & migrated, HTTP 200 OK with Inertia payload).
-- Lanjut: Commit perubahan ke branch `prod`, jalankan push/CI, lalu masuk ke `F2 — App shell`.
+- Task aktif: `F2 — App shell` [DONE] -> Siap checkpoint Foundation & lanjut `F3 — Account and onboarding`.
+- Foundation (F1): Lulus 100% di lokal dan CI GitHub Actions (Run 38592280494 lulus).
+- App Shell (F2):
+  - Responsive app shell (Mobile bottom navigation + Desktop sidebar): Home, Learn, Practice, Coach, Progress, Profile.
+  - Duolingo-inspired theme palette (Teal green `#20B87A`, accent orange, lime, cream background `#F9FAF3`), touch targets minimal 44px (`min-h-[44px] min-w-[44px]`).
+  - Aksesibilitas: skip-link ke `#main-content`, `prefers-reduced-motion: reduce`, focus-visible indicators.
+  - Verification: `npm run build` sukses, `docker run --rm argumenta:ci php artisan test` (7 tests, 84 assertions passed).

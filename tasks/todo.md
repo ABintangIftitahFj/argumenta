@@ -14,17 +14,17 @@ Legend: `[ ]` belum selesai, `[x]` selesai, `[-]` diblokir.
 - [x] **Verification:** `php artisan test` passes (1 passed, 12 assertions).
 - [x] **Checkpoint:** Record versions, commands, and CI result in `task.md`.
 - [x] **Knowledge graph:** Mark F1 `DONE`; unblock F2.
-- [ ] **Git:** Commit and push `prod`; CI passes.
+- [x] **Git:** Commit and push `prod`; CI passes.
 
 ## F2 — App shell
 
-- [ ] **Acceptance:** Responsive navigation exposes Home, Learn, Practice, Progress, Profile.
-- [ ] **Acceptance:** Theme uses PRD palette and touch targets are at least 44px.
-- [ ] **Acceptance:** Reduced-motion preference and keyboard focus are supported.
-- [ ] **Verification:** Build and focused UI test pass.
-- [ ] **Verification:** Manual mobile and desktop smoke check passes.
-- [ ] **Knowledge graph:** Mark F2 `DONE`; unblock F3.
-- [ ] **Git:** Commit and push `prod`; CI passes.
+- [x] **Acceptance:** Responsive navigation exposes Home, Learn, Practice, Progress, Profile.
+- [x] **Acceptance:** Theme uses PRD palette and touch targets are at least 44px.
+- [x] **Acceptance:** Reduced-motion preference and keyboard focus are supported.
+- [x] **Verification:** Build and focused UI test pass.
+- [x] **Verification:** Manual mobile and desktop smoke check passes.
+- [x] **Knowledge graph:** Mark F2 `DONE`; unblock F3.
+- [x] **Git:** Commit and push `prod`; CI passes.
 
 ## F3 — Account and onboarding
 
@@ -101,8 +101,8 @@ Legend: `[ ]` belum selesai, `[x]` selesai, `[-]` diblokir.
 
 ### Foundation
 
-- [ ] F1 and F2 acceptance complete.
-- [ ] Tests and build pass.
+- [x] F1 and F2 acceptance complete.
+- [x] Tests and build pass.
 - [ ] Human review before F3.
 
 ### Core navigation
