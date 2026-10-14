@@ -53,4 +53,28 @@ class User extends Authenticatable
     {
         return $this->hasMany(DebateSession::class);
     }
+
+    /**
+     * Get the user's credit balance.
+     */
+    public function credit(): \Illuminate\Database\Eloquent\Relations\HasOne
+    {
+        return $this->hasOne(UserCredit::class);
+    }
+
+    /**
+     * Get credit debit/grant audit transactions for the user.
+     */
+    public function creditTransactions(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany(CreditTransaction::class);
+    }
+
+    /**
+     * Get AI usage and cost audit logs for the user.
+     */
+    public function aiUsageLogs(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany(AiUsageLog::class);
+    }
 }

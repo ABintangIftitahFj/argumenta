@@ -26,12 +26,13 @@ Source: [plan/prd.md](plan/prd.md)
 
 ## Current execution
 
-- Task aktif: `F9 — Quota and AI audit` [IN_PROGRESS] (Phase 3: Speech MVP selesai: F6, F7, F8 lulus; tests passing 48/48).
-- Progress Analytics (F8):
-  - Service: `ProgressAnalyticsService` aggregating user metrics from database records without triggering repetitive LLM calls (speech counts, duration, average scorecard, matter/manner/method distributions, streak count, total XP, timeline skill trends, error frequency analysis with code examples, and personalized next drill recommendation).
-  - Controller & Routes: `ProgressController` invoked at `/progress` with authenticated debater analytics and graceful guest shell preview.
-  - Vue Pages: `Progress.vue` rendering 4 core KPI cards, next recommendation CTA card, rubric breakdown progress bars, chronological skill trend cards, common error frequency breakdown, and paginated speech history cards linking to evaluations.
-  - Verification: `npm run build` sukses (3.72s), `docker run --rm argumenta:ci php artisan test` (48 tests, 435 assertions passed).
+- Task aktif: `F10 — Authorization and observability` [IN_PROGRESS] (F9 — Quota and AI audit selesai; tests passing 53/53).
+- Quota & AI Audit (F9):
+  - Database migrations & models: `user_credits`, `credit_transactions`, `ai_usage_logs` tracking user credits, plan tiers, atomic debits/refunds, AI model, provider, tokens, duration, cost, and error status.
+  - Services & Exceptions: `QuotaGuardService` (atomic credit lock, debit, and refund), `AiUsageAuditService` (AI token, cost, and provider audit), `QuotaExceededException` (HTTP 429).
+  - Integration: `DebateEvaluationOrchestrator` guards credit consumption before AI execution, logs tokens/cost upon success, refunds credits and logs `provider_error` on failure paths, and redirects with error in `EvaluationController`.
+  - Verification: `npm run build` sukses (3.91s), `docker run --rm argumenta:ci php artisan test` (53 tests, 455 assertions passed).
+
 
 
 

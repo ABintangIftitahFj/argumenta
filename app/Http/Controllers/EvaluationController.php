@@ -29,7 +29,12 @@ class EvaluationController extends Controller
                 ->withErrors(['recording' => 'Silakan rekam pidato Anda terlebih dahulu sebelum evaluasi.']);
         }
 
-        $orchestrator->process($session, $recording);
+        try {
+            $orchestrator->process($session, $recording);
+        } catch (\App\Exceptions\QuotaExceededException $e) {
+            return redirect()->route('practice.record', $session->id)
+                ->withErrors(['quota' => $e->getMessage()]);
+        }
 
         return redirect()->route('practice.evaluation', $session->id)
             ->with('success', 'Pidato Anda telah berhasil dievaluasi oleh AI Judge!');

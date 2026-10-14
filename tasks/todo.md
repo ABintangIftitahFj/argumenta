@@ -75,11 +75,11 @@ Legend: `[ ]` belum selesai, `[x]` selesai, `[-]` diblokir.
 
 ## F9 — Quota and AI audit
 
-- [ ] **Acceptance:** AI calls stop when quota or budget is exceeded.
-- [ ] **Acceptance:** User, feature, model, provider usage, and cost are logged.
-- [ ] **Verification:** Quota, logging, and failure-path tests pass.
-- [ ] **Knowledge graph:** Mark F9 `DONE`; unblock release checkpoint.
-- [ ] **Git:** Commit and push `prod`; CI passes.
+- [x] **Acceptance:** AI calls stop when quota or budget is exceeded.
+- [x] **Acceptance:** User, feature, model, provider usage, and cost are logged.
+- [x] **Verification:** Quota, logging, and failure-path tests pass.
+- [x] **Knowledge graph:** Mark F9 `DONE`; unblock release checkpoint.
+- [x] **Git:** Commit and push `prod`; CI passes.
 
 ## F10 — Authorization and observability
 
