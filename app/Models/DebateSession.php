@@ -79,4 +79,29 @@ class DebateSession extends Model
     {
         return $this->hasOne(SpeechRecording::class)->latestOfMany();
     }
+
+    /**
+     * All transcripts associated with this debate session.
+     */
+    public function transcripts(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany(Transcript::class);
+    }
+
+    /**
+     * The most recent transcript for this session.
+     */
+    public function latestTranscript(): \Illuminate\Database\Eloquent\Relations\HasOne
+    {
+        return $this->hasOne(Transcript::class)->latestOfMany();
+    }
+
+    /**
+     * The evaluation scorecard for this debate session.
+     */
+    public function evaluation(): \Illuminate\Database\Eloquent\Relations\HasOne
+    {
+        return $this->hasOne(Evaluation::class);
+    }
 }
+

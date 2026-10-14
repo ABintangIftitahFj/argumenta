@@ -60,11 +60,11 @@ Legend: `[ ]` belum selesai, `[x]` selesai, `[-]` diblokir.
 
 ## F7 — Transcript and evaluation
 
-- [ ] **Acceptance:** Transcript supports uncertainty markers and user correction.
-- [ ] **Acceptance:** Evaluation shows three strengths and three improvements.
-- [ ] **Verification:** Typed provider response and persistence tests pass.
-- [ ] **Knowledge graph:** Mark F7 `DONE`; unblock F8 and F9.
-- [ ] **Git:** Commit and push `prod`; CI passes.
+- [x] **Acceptance:** Transcript supports uncertainty markers and user correction.
+- [x] **Acceptance:** Evaluation shows three strengths and three improvements.
+- [x] **Verification:** Typed provider response and persistence tests pass.
+- [x] **Knowledge graph:** Mark F7 `DONE`; unblock F8 and F9.
+- [x] **Git:** Commit and push `prod`; CI passes.
 
 ## F8 — Progress analytics
 

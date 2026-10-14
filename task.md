@@ -26,11 +26,12 @@ Source: [plan/prd.md](plan/prd.md)
 
 ## Current execution
 
-- Task aktif: `F7 — Transcript and evaluation` [IN_PROGRESS] (F6 — Speech recording selesai, tests passing 37/37).
-- Speech Recording (F6):
-  - Database migrations & models: `speech_recordings` table with private disk tracking (`debate_session_id`, `file_path`, `mime_type`, `file_size_bytes`, `duration_seconds`, `upload_status`, `storage_disk`).
-  - Storage: Private filesystem disk configured (`storage/app/private`).
-  - Controller & Routes: `SpeechRecordingController` (`show`, `store` with max 50MB audio validation, `stream` strictly authorizing session ownership).
-  - Vue Pages: `Practice/Record.vue` featuring live Web Audio API volume visualizer, dynamic stopwatch with POI window & grace period indicators, state machine (`idle` -> `recording` -> `paused` -> `stopped` -> `uploading` -> `uploaded` -> `failed`), audio preview player, and $\ge 44$px touch targets.
-  - Verification: `npm run build` sukses, `docker run --rm argumenta:ci php artisan test` (37 tests, 310 assertions passed).
+- Task aktif: `F8 — Progress analytics` [IN_PROGRESS] (F7 — Transcript and evaluation selesai, tests passing 44/44).
+- Transcript & Evaluation (F7):
+  - Database migrations & models: `transcripts`, `transcript_segments`, `evaluations`, `evaluation_issues`.
+  - Services: Typed DTOs (`TranscriptResultDto`, `TranscriptSegmentDto`, `EvaluationResultDto`, `EvaluationIssueDto`), `SpeechToTextInterface` (`SimulatedSpeechToTextService`), `AiJudgeInterface` (`DebateAiJudgeService`), `DebateEvaluationOrchestrator` (transactional pipeline).
+  - Controller & Routes: `EvaluationController` (`process`, `show`, `updateTranscript`), `practice.process`, `practice.evaluation`, `practice.transcript.update`.
+  - Vue Pages: `Practice/Evaluation.vue` featuring WUDC debate scorecard (Matter, Manner, Method, separate Language score), 3 strengths & 3 improvements, quote-based AREL critique annotations, interactive synchronized audio player, ASR uncertainty markers, and debater transcript correction mode.
+  - Verification: `npm run build` sukses (3.72s), `docker run --rm argumenta:ci php artisan test` (44 tests, 365 assertions passed).
+
 

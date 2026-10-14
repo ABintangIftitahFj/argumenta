@@ -279,6 +279,16 @@ const uploadRecording = async () => {
         recordState.value = 'failed';
     }
 };
+
+const isEvaluating = ref(false);
+const requestEvaluation = () => {
+    isEvaluating.value = true;
+    router.post(`/practice/${props.session.id}/process`, {}, {
+        onFinish: () => {
+            isEvaluating.value = false;
+        },
+    });
+};
 </script>
 
 <template>
@@ -493,10 +503,13 @@ const uploadRecording = async () => {
 
                         <button
                             type="button"
-                            class="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-2xl bg-primary-container text-white font-bold text-sm shadow-sm hover:bg-primary transition-all min-h-[44px] min-w-[200px] focus-visible:outline-2 focus-visible:outline-primary-container active:scale-95"
+                            :disabled="isEvaluating"
+                            class="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-2xl bg-primary-container text-white font-bold text-sm shadow-sm hover:bg-primary transition-all min-h-[44px] min-w-[200px] focus-visible:outline-2 focus-visible:outline-primary-container active:scale-95 disabled:opacity-50"
+                            @click="requestEvaluation"
                         >
-                            <span class="material-symbols-outlined text-xl">analytics</span>
-                            <span>Mulai Evaluasi Juri AI</span>
+                            <span v-if="isEvaluating" class="material-symbols-outlined animate-spin text-xl">progress_activity</span>
+                            <span v-else class="material-symbols-outlined text-xl">analytics</span>
+                            <span>{{ isEvaluating ? 'Menganalisis Pidato...' : 'Mulai Evaluasi Juri AI' }}</span>
                         </button>
                     </template>
 

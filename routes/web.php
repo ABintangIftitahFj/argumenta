@@ -27,6 +27,9 @@ Route::middleware('auth')->group(function () {
     Route::get('/practice/{session}/record', [\App\Http\Controllers\SpeechRecordingController::class, 'show'])->name('practice.record');
     Route::post('/practice/{session}/record', [\App\Http\Controllers\SpeechRecordingController::class, 'store'])->name('practice.record.store');
     Route::get('/practice/{session}/audio/{recording}', [\App\Http\Controllers\SpeechRecordingController::class, 'stream'])->name('practice.audio');
+    Route::post('/practice/{session}/process', [\App\Http\Controllers\EvaluationController::class, 'process'])->name('practice.process');
+    Route::get('/practice/{session}/evaluation', [\App\Http\Controllers\EvaluationController::class, 'show'])->name('practice.evaluation');
+    Route::patch('/practice/{session}/transcript', [\App\Http\Controllers\EvaluationController::class, 'updateTranscript'])->name('practice.transcript.update');
 });
 
 // Main App Navigation Shell
