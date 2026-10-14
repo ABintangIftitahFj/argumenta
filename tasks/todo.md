@@ -52,11 +52,11 @@ Legend: `[ ]` belum selesai, `[x]` selesai, `[-]` diblokir.
 
 ## F6 — Speech recording
 
-- [ ] **Acceptance:** User can start, pause, stop, and review a recording.
-- [ ] **Acceptance:** Session state shows recording, upload, queued, and failure states.
-- [ ] **Verification:** MediaRecorder support and upload state tests pass.
-- [ ] **Knowledge graph:** Mark F6 `DONE`; unblock F7.
-- [ ] **Git:** Commit and push `prod`; CI passes.
+- [x] **Acceptance:** User can start, pause, stop, and review a recording.
+- [x] **Acceptance:** Session state shows recording, upload, queued, and failure states.
+- [x] **Verification:** MediaRecorder support and upload state tests pass.
+- [x] **Knowledge graph:** Mark F6 `DONE`; unblock F7.
+- [x] **Git:** Commit and push `prod`; CI passes.
 
 ## F7 — Transcript and evaluation
 

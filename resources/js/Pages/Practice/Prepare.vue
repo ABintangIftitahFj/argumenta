@@ -257,13 +257,13 @@ const userNotes = ref('');
                     </div>
                 </div>
 
-                <button
-                    type="button"
+                <Link
+                    :href="`/practice/${session.id}/record`"
                     class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-2xl bg-primary-container text-white font-bold text-sm shadow-sm hover:bg-primary transition-all min-h-[44px] min-w-[44px] focus-visible:outline-2 focus-visible:outline-primary-container active:scale-95"
                 >
                     <span class="material-symbols-outlined text-lg" aria-hidden="true">fiber_manual_record</span>
                     <span>Mulai Rekam Pidato Sekarang</span>
-                </button>
+                </Link>
             </div>
         </div>
     </AppLayout>

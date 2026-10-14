@@ -63,4 +63,20 @@ class DebateSession extends Model
     {
         return $this->belongsTo(Motion::class);
     }
+
+    /**
+     * All speech recordings recorded for this debate session.
+     */
+    public function recordings(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany(SpeechRecording::class);
+    }
+
+    /**
+     * The most recent speech recording for this session.
+     */
+    public function latestRecording(): \Illuminate\Database\Eloquent\Relations\HasOne
+    {
+        return $this->hasOne(SpeechRecording::class)->latestOfMany();
+    }
 }

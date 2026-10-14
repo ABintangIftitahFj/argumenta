@@ -26,12 +26,11 @@ Source: [plan/prd.md](plan/prd.md)
 
 ## Current execution
 
-- Task aktif: `F5 — Practice setup` [DONE] -> Checkpoint Core Navigation selesai; siap review & lanjut ke Phase 3 `F6 — Speech recording`.
-- App Shell (F2), Auth (F3), & Learning Path (F4): Lulus 100% di lokal dan CI GitHub Actions.
-- Practice Setup (F5):
-  - Database migrations & models: `motions`, `debate_sessions`.
-  - Service: `DebateRuleEngine` (BP 8 roles, AP 8 roles incl. 4-minute Reply speeches, 7-minute substantives, POI window 1:00-6:00).
-  - Database seeder: `MotionSeeder` (mosi bilingual lintas tema).
-  - Controller: `PracticeSetupController` (`create`, `store`, `prepare`).
-  - Vue Pages: `Practice.vue` (motion picker, custom motion, dynamic BP/AP role grid, speech rules preview) dan `Practice/Prepare.vue` (15m prep timer, scratchpad, brief).
-  - Verification: `npm run build` sukses, `docker run --rm argumenta:ci php artisan test` (31 tests, 282 assertions passed).
+- Task aktif: `F7 — Transcript and evaluation` [IN_PROGRESS] (F6 — Speech recording selesai, tests passing 37/37).
+- Speech Recording (F6):
+  - Database migrations & models: `speech_recordings` table with private disk tracking (`debate_session_id`, `file_path`, `mime_type`, `file_size_bytes`, `duration_seconds`, `upload_status`, `storage_disk`).
+  - Storage: Private filesystem disk configured (`storage/app/private`).
+  - Controller & Routes: `SpeechRecordingController` (`show`, `store` with max 50MB audio validation, `stream` strictly authorizing session ownership).
+  - Vue Pages: `Practice/Record.vue` featuring live Web Audio API volume visualizer, dynamic stopwatch with POI window & grace period indicators, state machine (`idle` -> `recording` -> `paused` -> `stopped` -> `uploading` -> `uploaded` -> `failed`), audio preview player, and $\ge 44$px touch targets.
+  - Verification: `npm run build` sukses, `docker run --rm argumenta:ci php artisan test` (37 tests, 310 assertions passed).
+
