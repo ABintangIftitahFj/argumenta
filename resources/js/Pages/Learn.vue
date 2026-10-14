@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import { Head, Link } from '@inertiajs/vue3';
+import { computed } from 'vue';
 import AppLayout from '../Layouts/AppLayout.vue';
 
-defineProps<{
+const props = defineProps<{
     appName: string;
+    modules?: Module[];
 }>();
 
 interface Module {
@@ -11,11 +13,16 @@ interface Module {
     title: string;
     description: string;
     stage: string;
-    status: 'completed' | 'active' | 'locked';
+    status: 'completed' | 'active' | 'locked' | 'available';
     score?: number;
+    xp_reward?: number;
 }
 
-const modules: Module[] = [
+const moduleList = computed<Module[]>(() => {
+    return props.modules || defaultModules;
+});
+
+const defaultModules: Module[] = [
     {
         id: 1,
         title: 'Dasar Klaim & Premis Argumen',
@@ -68,7 +75,7 @@ const modules: Module[] = [
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div
-                    v-for="mod in modules"
+                    v-for="mod in moduleList"
                     :key="mod.id"
                     class="rounded-3xl bg-surface-white p-6 shadow-sm border border-border-clean/60 flex flex-col justify-between gap-4 transition-all"
                     :class="{ 'border-primary-container ring-1 ring-primary-container/30': mod.status === 'active' }"

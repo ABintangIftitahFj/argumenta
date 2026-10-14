@@ -36,11 +36,11 @@ Legend: `[ ]` belum selesai, `[x]` selesai, `[-]` diblokir.
 
 ## F4 — Learning path
 
-- [ ] **Acceptance:** Home shows learning path, streak, XP, recent session, and CTA.
-- [ ] **Acceptance:** Empty and populated states are handled.
-- [ ] **Verification:** Feature tests and responsive smoke check pass.
-- [ ] **Knowledge graph:** Mark F4 `DONE`; unblock F5.
-- [ ] **Git:** Commit and push `prod`; CI passes.
+- [x] **Acceptance:** Home shows learning path, streak, XP, recent session, and CTA.
+- [x] **Acceptance:** Empty and populated states are handled.
+- [x] **Verification:** Feature tests and responsive smoke check pass.
+- [x] **Knowledge graph:** Mark F4 `DONE`; unblock F5.
+- [x] **Git:** Commit and push `prod`; CI passes.
 
 ## F5 — Practice setup
 

@@ -37,4 +37,12 @@ class User extends Authenticatable
     {
         return $this->hasOne(Profile::class);
     }
+
+    /**
+     * Get the learning progress entries for the user.
+     */
+    public function learningProgress(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany(UserLearningProgress::class);
+    }
 }

@@ -24,13 +24,8 @@ Route::middleware('auth')->group(function () {
 });
 
 // Main App Navigation Shell
-Route::get('/', fn () => Inertia::render('Home', [
-    'appName' => config('app.name', 'Argumenta'),
-]))->name('home');
-
-Route::get('/learn', fn () => Inertia::render('Learn', [
-    'appName' => config('app.name', 'Argumenta'),
-]))->name('learn');
+Route::get('/', \App\Http\Controllers\HomeController::class)->name('home');
+Route::get('/learn', \App\Http\Controllers\LearnController::class)->name('learn');
 
 Route::get('/practice', fn () => Inertia::render('Practice', [
     'appName' => config('app.name', 'Argumenta'),

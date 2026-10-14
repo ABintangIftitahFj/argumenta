@@ -26,12 +26,12 @@ Source: [plan/prd.md](plan/prd.md)
 
 ## Current execution
 
-- Task aktif: `F3 — Account and onboarding` [DONE] -> Melanjutkan ke `F4 — Learning path`.
-- App Shell (F2): Lulus 100% di lokal dan CI GitHub Actions (Run 38593751797 lulus).
-- Account & Onboarding (F3):
-  - Model `User` + `Profile` (1:1 relation), migration `profiles` table.
-  - Controllers: `RegisterController`, `LoginController`, `OnboardingController`.
-  - Vue Pages: `Auth/Register.vue`, `Auth/Login.vue`, `Onboarding/Setup.vue` (4-step interactive wizard).
-  - AppLayout dynamic state: auth/guest detection, user card, logout action.
-  - Dependencies: added `fakerphp/faker` & `mockery/mockery` for robust Pest testing.
-  - Verification: `npm run build` sukses, `docker run --rm argumenta:ci php artisan test` (19 tests, 155 assertions passed).
+- Task aktif: `F4 — Learning path` [DONE] -> Melanjutkan ke `F5 — Practice setup`.
+- App Shell (F2) & Auth/Onboarding (F3): Lulus 100% di lokal dan CI GitHub Actions.
+- Learning Path (F4):
+  - Database migrations & models: `learning_modules`, `user_learning_progress`.
+  - Database seeder: `LearningModuleSeeder` (5 tahap silabus kompetisi debat WUDC).
+  - Controllers: `HomeController` dan `LearnController`.
+  - Dynamic Vue Pages: `Home.vue` (learning path progress, streak, XP, empty vs populated recent session states) dan `Learn.vue`.
+  - Global test setup: configured `RefreshDatabase` in `tests/Pest.php`.
+  - Verification: `npm run build` sukses, `docker run --rm argumenta:ci php artisan test` (23 tests, 228 assertions passed).

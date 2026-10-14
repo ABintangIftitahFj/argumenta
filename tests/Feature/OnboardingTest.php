@@ -5,7 +5,6 @@ use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Inertia\Testing\AssertableInertia as Assert;
 
-uses(RefreshDatabase::class);
 
 it('redirects guests away from onboarding to login', function () {
     $this->get('/onboarding')
