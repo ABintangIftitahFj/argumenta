@@ -26,12 +26,12 @@ Source: [plan/prd.md](plan/prd.md)
 
 ## Current execution
 
-- Task aktif: `F4 — Learning path` [DONE] -> Melanjutkan ke `F5 — Practice setup`.
-- App Shell (F2) & Auth/Onboarding (F3): Lulus 100% di lokal dan CI GitHub Actions.
-- Learning Path (F4):
-  - Database migrations & models: `learning_modules`, `user_learning_progress`.
-  - Database seeder: `LearningModuleSeeder` (5 tahap silabus kompetisi debat WUDC).
-  - Controllers: `HomeController` dan `LearnController`.
-  - Dynamic Vue Pages: `Home.vue` (learning path progress, streak, XP, empty vs populated recent session states) dan `Learn.vue`.
-  - Global test setup: configured `RefreshDatabase` in `tests/Pest.php`.
-  - Verification: `npm run build` sukses, `docker run --rm argumenta:ci php artisan test` (23 tests, 228 assertions passed).
+- Task aktif: `F5 — Practice setup` [DONE] -> Checkpoint Core Navigation selesai; siap review & lanjut ke Phase 3 `F6 — Speech recording`.
+- App Shell (F2), Auth (F3), & Learning Path (F4): Lulus 100% di lokal dan CI GitHub Actions.
+- Practice Setup (F5):
+  - Database migrations & models: `motions`, `debate_sessions`.
+  - Service: `DebateRuleEngine` (BP 8 roles, AP 8 roles incl. 4-minute Reply speeches, 7-minute substantives, POI window 1:00-6:00).
+  - Database seeder: `MotionSeeder` (mosi bilingual lintas tema).
+  - Controller: `PracticeSetupController` (`create`, `store`, `prepare`).
+  - Vue Pages: `Practice.vue` (motion picker, custom motion, dynamic BP/AP role grid, speech rules preview) dan `Practice/Prepare.vue` (15m prep timer, scratchpad, brief).
+  - Verification: `npm run build` sukses, `docker run --rm argumenta:ci php artisan test` (31 tests, 282 assertions passed).

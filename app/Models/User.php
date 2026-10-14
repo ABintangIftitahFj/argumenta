@@ -45,4 +45,12 @@ class User extends Authenticatable
     {
         return $this->hasMany(UserLearningProgress::class);
     }
+
+    /**
+     * Get the debate sessions created by the user.
+     */
+    public function debateSessions(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany(DebateSession::class);
+    }
 }

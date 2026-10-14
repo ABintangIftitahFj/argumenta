@@ -21,15 +21,15 @@ Route::middleware('auth')->group(function () {
 
     Route::get('/onboarding', [OnboardingController::class, 'index'])->name('onboarding');
     Route::post('/onboarding', [OnboardingController::class, 'store'])->name('onboarding.store');
+
+    Route::post('/practice', [\App\Http\Controllers\PracticeSetupController::class, 'store'])->name('practice.store');
+    Route::get('/practice/{session}/prepare', [\App\Http\Controllers\PracticeSetupController::class, 'prepare'])->name('practice.prepare');
 });
 
 // Main App Navigation Shell
 Route::get('/', \App\Http\Controllers\HomeController::class)->name('home');
 Route::get('/learn', \App\Http\Controllers\LearnController::class)->name('learn');
-
-Route::get('/practice', fn () => Inertia::render('Practice', [
-    'appName' => config('app.name', 'Argumenta'),
-]))->name('practice');
+Route::get('/practice', [\App\Http\Controllers\PracticeSetupController::class, 'create'])->name('practice');
 
 Route::get('/coach', fn () => Inertia::render('Coach', [
     'appName' => config('app.name', 'Argumenta'),

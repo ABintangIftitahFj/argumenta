@@ -44,11 +44,11 @@ Legend: `[ ]` belum selesai, `[x]` selesai, `[-]` diblokir.
 
 ## F5 — Practice setup
 
-- [ ] **Acceptance:** User selects format, motion, role, language, and difficulty.
-- [ ] **Acceptance:** Server validates configuration and calculates duration/rules.
-- [ ] **Verification:** Validation tests cover invalid and valid configurations.
-- [ ] **Knowledge graph:** Mark F5 `DONE`; unblock F6.
-- [ ] **Git:** Commit and push `prod`; CI passes.
+- [x] **Acceptance:** User selects format, motion, role, language, and difficulty.
+- [x] **Acceptance:** Server validates configuration and calculates duration/rules.
+- [x] **Verification:** Validation tests cover invalid and valid configurations.
+- [x] **Knowledge graph:** Mark F5 `DONE`; unblock F6.
+- [x] **Git:** Commit and push `prod`; CI passes.
 
 ## F6 — Speech recording
 
@@ -107,8 +107,8 @@ Legend: `[ ]` belum selesai, `[x]` selesai, `[-]` diblokir.
 
 ### Core navigation
 
-- [ ] F3, F4, and F5 acceptance complete.
-- [ ] Auth-to-practice setup flow works.
+- [x] F3, F4, and F5 acceptance complete.
+- [x] Auth-to-practice setup flow works.
 - [ ] Human review before F6.
 
 ### Speech MVP
