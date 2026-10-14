@@ -68,10 +68,10 @@ Legend: `[ ]` belum selesai, `[x]` selesai, `[-]` diblokir.
 
 ## F8 — Progress analytics
 
-- [ ] **Acceptance:** User sees history, skill trend, errors, and next recommendation.
-- [ ] **Verification:** Analytics aggregation tests pass.
-- [ ] **Knowledge graph:** Mark F8 `DONE`; unblock release checkpoint.
-- [ ] **Git:** Commit and push `prod`; CI passes.
+- [x] **Acceptance:** User sees history, skill trend, errors, and next recommendation.
+- [x] **Verification:** Analytics aggregation tests pass.
+- [x] **Knowledge graph:** Mark F8 `DONE`; unblock release checkpoint.
+- [x] **Git:** Commit and push `prod`; CI passes.
 
 ## F9 — Quota and AI audit
 
@@ -113,8 +113,8 @@ Legend: `[ ]` belum selesai, `[x]` selesai, `[-]` diblokir.
 
 ### Speech MVP
 
-- [ ] F6, F7, and F8 acceptance complete.
-- [ ] Recording-to-feedback flow works.
+- [x] F6, F7, and F8 acceptance complete.
+- [x] Recording-to-feedback flow works.
 - [ ] Human review before F9.
 
 ### Release readiness

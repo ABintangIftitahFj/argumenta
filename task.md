@@ -26,12 +26,12 @@ Source: [plan/prd.md](plan/prd.md)
 
 ## Current execution
 
-- Task aktif: `F8 — Progress analytics` [IN_PROGRESS] (F7 — Transcript and evaluation selesai, tests passing 44/44).
-- Transcript & Evaluation (F7):
-  - Database migrations & models: `transcripts`, `transcript_segments`, `evaluations`, `evaluation_issues`.
-  - Services: Typed DTOs (`TranscriptResultDto`, `TranscriptSegmentDto`, `EvaluationResultDto`, `EvaluationIssueDto`), `SpeechToTextInterface` (`SimulatedSpeechToTextService`), `AiJudgeInterface` (`DebateAiJudgeService`), `DebateEvaluationOrchestrator` (transactional pipeline).
-  - Controller & Routes: `EvaluationController` (`process`, `show`, `updateTranscript`), `practice.process`, `practice.evaluation`, `practice.transcript.update`.
-  - Vue Pages: `Practice/Evaluation.vue` featuring WUDC debate scorecard (Matter, Manner, Method, separate Language score), 3 strengths & 3 improvements, quote-based AREL critique annotations, interactive synchronized audio player, ASR uncertainty markers, and debater transcript correction mode.
-  - Verification: `npm run build` sukses (3.72s), `docker run --rm argumenta:ci php artisan test` (44 tests, 365 assertions passed).
+- Task aktif: `F9 — Quota and AI audit` [IN_PROGRESS] (Phase 3: Speech MVP selesai: F6, F7, F8 lulus; tests passing 48/48).
+- Progress Analytics (F8):
+  - Service: `ProgressAnalyticsService` aggregating user metrics from database records without triggering repetitive LLM calls (speech counts, duration, average scorecard, matter/manner/method distributions, streak count, total XP, timeline skill trends, error frequency analysis with code examples, and personalized next drill recommendation).
+  - Controller & Routes: `ProgressController` invoked at `/progress` with authenticated debater analytics and graceful guest shell preview.
+  - Vue Pages: `Progress.vue` rendering 4 core KPI cards, next recommendation CTA card, rubric breakdown progress bars, chronological skill trend cards, common error frequency breakdown, and paginated speech history cards linking to evaluations.
+  - Verification: `npm run build` sukses (3.72s), `docker run --rm argumenta:ci php artisan test` (48 tests, 435 assertions passed).
+
 
 

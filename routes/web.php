@@ -41,9 +41,7 @@ Route::get('/coach', fn () => Inertia::render('Coach', [
     'appName' => config('app.name', 'Argumenta'),
 ]))->name('coach');
 
-Route::get('/progress', fn () => Inertia::render('Progress', [
-    'appName' => config('app.name', 'Argumenta'),
-]))->name('progress');
+Route::get('/progress', \App\Http\Controllers\ProgressController::class)->name('progress');
 
 Route::get('/profile', fn () => Inertia::render('Profile', [
     'appName' => config('app.name', 'Argumenta'),
