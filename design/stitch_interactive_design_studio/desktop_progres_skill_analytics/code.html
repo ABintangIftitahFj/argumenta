@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Nunito+Sans:wght@700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary-fixed-variant":"#184f44","on-tertiary-fixed":"#161f00","surface":"#e6fff4","secondary-container":"#b7eede","surface-white":"#FFFFFF","secondary":"#33675b","surface-container-high":"#d4eee3","outline-variant":"#bccabe","on-surface":"#091f19","primary-fixed-dim":"#55de9c","secondary-fixed-dim":"#9bd1c3","accent-orange":"#FFB14A","surface-variant":"#cfe8de","accent-coral":"#EF6D6D","surface-container":"#daf4e9","text-muted":"#6C7973","background":"#e6fff4","on-tertiary-fixed-variant":"#3b4d00","on-secondary-container":"#3a6d61","on-background":"#091f19","inverse-on-surface":"#ddf7ec","on-primary":"#ffffff","background-cream":"#F9FAF3","secondary-fixed":"#b7eede","border-clean":"#DDE7DE","primary-fixed":"#74fbb7","tertiary":"#506606","on-tertiary":"#ffffff","error":"#ba1a1a","surface-bright":"#e6fff4","outline":"#6d7a70","on-error-container":"#93000a","surface-tint":"#006c45","on-primary-fixed-variant":"#005233","tertiary-container":"#92ac4a","on-surface-variant":"#3d4a41","on-primary-fixed":"#002112","primary-light":"#E8F8F1","surface-container-highest":"#cfe8de","inverse-primary":"#55de9c","surface-container-lowest":"#ffffff","surface-dim":"#c6e0d5","accent-purple":"#8668E8","error-container":"#ffdad6","surface-container-low":"#e0f9ee","tertiary-fixed":"#d2ee84","surface-subtle":"#F1F4EC","on-secondary":"#ffffff","on-primary-container":"#004128","primary-container":"#20b87a","inverse-surface":"#1f352e","primary":"#006c45","on-secondary-fixed":"#00201a","tertiary-fixed-dim":"#b6d16b","on-error":"#ffffff","on-tertiary-container":"#2f3e00"},borderRadius:{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},spacing:{"space-2xl":"3rem","space-lg":"1.5rem","space-md":"1rem","gutter-desktop":"1.5rem","gutter":"1rem","space-xs":"0.25rem","margin":"1rem","margin-desktop":"2.5rem","margin-tablet":"1.5rem","space-xl":"2rem","space-sm":"0.5rem"},fontFamily:{"body-md":["Inter"],"headline-lg-mobile":["Nunito Sans"],"body-lg":["Inter"],"label-lg":["Inter"],"label-md":["Inter"],"headline-xl":["Nunito Sans"],"headline-sm":["Nunito Sans"],"body-sm":["Inter"],"headline-lg":["Nunito Sans"],"headline-md":["Nunito Sans"],"headline-xl-mobile":["Nunito Sans"],"metric-display":["Nunito Sans"],"label-sm":["Inter"]},fontSize:{"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],"headline-lg-mobile":["24px",{lineHeight:"32px",fontWeight:"700"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}],"label-lg":["15px",{lineHeight:"20px",fontWeight:"600"}],"label-md":["13px",{lineHeight:"18px",fontWeight:"600"}],"headline-xl":["36px",{lineHeight:"44px",fontWeight:"800"}],"headline-sm":["18px",{lineHeight:"24px",fontWeight:"700"}],"body-sm":["12px",{lineHeight:"16px",fontWeight:"400"}],"headline-lg":["28px",{lineHeight:"36px",fontWeight:"800"}],"headline-md":["22px",{lineHeight:"28px",fontWeight:"700"}],"headline-xl-mobile":["28px",{lineHeight:"36px",fontWeight:"800"}],"metric-display":["32px",{lineHeight:"36px",fontWeight:"900"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.5px",fontWeight:"700"}]}}}}</script></head><body class="bg-background-cream font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col justify-between p-space-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col gap-space-lg"><div class="flex items-center gap-space-sm px-space-sm pt-space-xs"><div class="w-10 h-10 rounded-DEFAULT bg-primary-container flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[24px]">record_voice_over</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">Argumenta</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">AI Debate Coach</span></div></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-bold"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="beranda" href="#"><span class="material-symbols-outlined text-[20px]">home</span><span class="font-label-lg text-label-lg">Beranda</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="latihan" href="#"><span class="material-symbols-outlined text-[20px]">sports_martial_arts</span><span class="font-label-lg text-label-lg">Latihan</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="tanya-coach-kiko" href="#"><span class="material-symbols-outlined text-[20px]">smart_toy</span><span class="font-label-lg text-label-lg">Tanya Coach Kiko</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm rounded-DEFAULT transition-all bg-primary-container text-on-primary font-bold" data-path="progres" href="#"><span class="material-symbols-outlined text-[20px]">insights</span><span class="font-label-lg text-label-lg">Progres</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="profil" href="#"><span class="material-symbols-outlined text-[20px]">person</span><span class="font-label-lg text-label-lg">Profil</span></a></nav></div><div class="p-space-sm bg-surface-white rounded-DEFAULT shadow-[0_1px_8px_rgba(0,0,0,0.04)] flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm"><div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container font-headline-sm text-headline-sm">A</div><div class="flex flex-col min-w-0 flex-1"><span class="font-label-md text-label-md text-on-surface truncate font-semibold">Aisha Nurhaliza</span><span class="font-label-sm text-label-sm text-text-muted truncate">Lv. 3 Junior Debater</span></div></div><div class="flex items-center justify-between pt-space-xs"><a class="flex items-center gap-space-xs text-text-muted hover:text-on-surface transition-colors font-label-sm text-label-sm" data-path="settings" href="#"><span class="material-symbols-outlined text-[18px]">settings</span><span>Pengaturan</span></a><a class="flex items-center gap-space-xs text-text-muted hover:text-error transition-colors font-label-sm text-label-sm" data-path="logout" href="#"><span class="material-symbols-outlined text-[18px]">logout</span><span>Keluar</span></a></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-white/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-sm"><span class="font-label-md text-label-md text-text-muted">Argumenta</span><span class="font-label-md text-label-md text-text-muted">/</span><span class="font-label-md text-label-md text-on-surface font-semibold">Arena Debat</span><span class="px-space-sm py-space-xs bg-accent-purple/15 text-accent-purple font-label-sm text-label-sm rounded-full font-bold">BP FORMAT</span></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-space-xs bg-accent-orange/15 rounded-full text-accent-orange font-label-md text-label-md font-bold"><span class="material-symbols-outlined text-[18px]">local_fire_department</span><span>5 Hari</span></div><div class="flex items-center gap-space-xs px-space-sm py-space-xs bg-primary-light rounded-full text-primary font-label-md text-label-md font-bold"><span class="material-symbols-outlined text-[18px]">military_tech</span><span>560 XP</span></div><div class="flex items-center bg-surface-subtle p-space-xs rounded-full"><button class="px-space-sm py-space-xs rounded-full font-label-sm text-label-sm bg-surface-white text-on-surface font-bold shadow-sm">ID</button><button class="px-space-sm py-space-xs rounded-full font-label-sm text-label-sm text-text-muted hover:text-on-surface">EN</button></div><button class="w-9 h-9 rounded-full bg-surface-subtle flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 w-full min-h-screen bg-background-cream p-space-lg lg:p-space-xl"><div class="flex flex-col w-full">
+<!-- Top Header Section with Tactile Tone & Filter Badges -->
+<section class="flex flex-col md:flex-row md:items-end justify-between gap-space-lg mb-space-xl">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<div class="inline-flex items-center gap-space-xs text-primary font-label-sm uppercase tracking-widest">
+<span class="material-symbols-outlined text-[16px]">query_stats</span>
+<span>Laporan Evaluasi AI • Semester Genap</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">
+        Progres &amp; Analisis Skill Debater
+      </h1>
+<p class="font-body-lg text-body-lg text-text-muted">
+        Pantau pertumbuhan logika debat, kecakapan bahasa Inggris, dan konsistensi latihan Anda dengan umpan balik terstruktur British Parliamentary.
+      </p>
+</div>
+<!-- Timeframe Filter Chips -->
+<div class="flex items-center gap-space-xs p-1.5 bg-surface-white rounded-DEFAULT shadow-[0_2px_10px_rgba(0,108,69,0.06)] self-start md:self-auto">
+<button class="px-space-md py-2 rounded-DEFAULT bg-primary text-on-primary font-label-md transition-all shadow-sm flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-fixed"></span>
+<span>7 Sesi Terakhir</span>
+</button>
+<button class="px-space-md py-2 rounded-DEFAULT text-text-muted hover:text-on-surface hover:bg-surface-subtle font-label-md transition-all">
+        30 Sesi Terakhir
+      </button>
+<button class="px-space-md py-2 rounded-DEFAULT text-text-muted hover:text-on-surface hover:bg-surface-subtle font-label-md transition-all">
+        Semester Ini
+      </button>
+<button class="px-space-md py-2 rounded-DEFAULT text-text-muted hover:text-on-surface hover:bg-surface-subtle font-label-md transition-all">
+        Sepanjang Waktu
+      </button>
+</div>
+</section>
+<!-- Top KPI Grid: 4 Cards -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md mb-space-xl">
+<!-- KPI 1: Overall Score Gauge -->
+<div class="bg-surface-white rounded-DEFAULT p-space-lg shadow-[0_4px_16px_rgba(23,78,67,0.05)] flex flex-col justify-between relative overflow-hidden group hover:-translate-y-1 transition-all duration-300">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-primary-light/40 pointer-events-none"></div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm uppercase tracking-wider text-text-muted">Skor Keseluruhan</span>
+<span class="inline-flex items-center gap-0.5 px-2 py-0.5 rounded-full bg-primary-light text-primary font-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+          +6 Tren
+        </span>
+</div>
+<div class="flex items-baseline gap-space-sm mb-space-sm">
+<span class="font-metric-display text-metric-display text-on-surface font-extrabold">81</span>
+<span class="font-headline-sm text-headline-sm text-text-muted">/100</span>
+</div>
+<!-- Mini visual radial meter SVG -->
+<div class="flex items-center gap-space-md pt-space-xs">
+<div class="relative w-12 h-12 flex-shrink-0">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-subtle" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-primary-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="81, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<div class="absolute inset-0 flex items-center justify-center font-label-sm text-primary font-bold">
+            A-
+          </div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Passing BP Grade</span>
+<span class="font-body-sm text-body-sm text-text-muted">Target Tournament: 85+</span>
+</div>
+</div>
+</div>
+<!-- KPI 2: Total Practice Sessions -->
+<div class="bg-surface-white rounded-DEFAULT p-space-lg shadow-[0_4px_16px_rgba(23,78,67,0.05)] flex flex-col justify-between group hover:-translate-y-1 transition-all duration-300">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm uppercase tracking-wider text-text-muted">Total Latihan</span>
+<div class="w-8 h-8 rounded-full bg-secondary-container/40 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">record_voice_over</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-xs mb-space-sm">
+<span class="font-metric-display text-metric-display text-on-surface font-extrabold">14</span>
+<span class="font-label-lg text-label-lg text-text-muted font-semibold">Sesi Terekam</span>
+</div>
+<div class="bg-surface-subtle rounded-DEFAULT p-space-xs px-space-sm flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-on-secondary-container font-label-sm">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>98 Menit Podium</span>
+</div>
+<span class="text-secondary font-label-sm font-semibold">Avg 7m/speech</span>
+</div>
+</div>
+<!-- KPI 3: Streak Counter -->
+<div class="bg-surface-white rounded-DEFAULT p-space-lg shadow-[0_4px_16px_rgba(23,78,67,0.05)] flex flex-col justify-between group hover:-translate-y-1 transition-all duration-300">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm uppercase tracking-wider text-text-muted">Streak Latihan</span>
+<div class="w-8 h-8 rounded-full bg-accent-orange/15 flex items-center justify-center text-accent-orange">
+<span class="material-symbols-outlined text-[20px]">local_fire_department</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-xs mb-space-xs">
+<span class="font-metric-display text-metric-display text-accent-orange font-extrabold">5</span>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Hari Aktif</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-text-muted">
+<span>Target mingguan</span>
+<span class="font-bold text-on-surface">80% Tercapai</span>
+</div>
+<div class="w-full bg-surface-subtle rounded-full h-2 overflow-hidden">
+<div class="bg-accent-orange h-full rounded-full transition-all duration-500" style="width: 80%"></div>
+</div>
+</div>
+</div>
+<!-- KPI 4: Experience Points & Rank -->
+<div class="bg-surface-white rounded-DEFAULT p-space-lg shadow-[0_4px_16px_rgba(23,78,67,0.05)] flex flex-col justify-between group hover:-translate-y-1 transition-all duration-300">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm uppercase tracking-wider text-text-muted">XP Terkumpul</span>
+<div class="w-8 h-8 rounded-full bg-accent-purple/15 flex items-center justify-center text-accent-purple">
+<span class="material-symbols-outlined text-[18px]">military_tech</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-xs mb-space-xs">
+<span class="font-metric-display text-metric-display text-on-surface font-extrabold">560</span>
+<span class="font-label-md text-label-md text-accent-purple font-bold">XP</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm">
+<span class="text-on-surface font-bold">Lv. 3 Junior Debater</span>
+<span class="text-text-muted">40 XP lagi</span>
+</div>
+<div class="w-full bg-surface-subtle rounded-full h-2 overflow-hidden">
+<div class="bg-accent-purple h-full rounded-full transition-all duration-500" style="width: 85%"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Content 2-Column Split: Deep Analytics vs Recommendations & Badges -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT COLUMN: Charts & Two-Dimensional Metrics (7 Cols) -->
+<section class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- Growth Chart: 7 Last Sessions -->
+<div class="bg-surface-white rounded-DEFAULT p-space-lg shadow-[0_4px_16px_rgba(23,78,67,0.05)] flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Grafik Pertumbuhan Skor</h2>
+<p class="font-body-sm text-body-sm text-text-muted">Evaluasi per sesi berdasarkan 7 parameter standar WUDC</p>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="inline-flex items-center gap-1.5 font-label-sm text-text-muted">
+<span class="w-3 h-3 rounded-sm bg-primary-container"></span>
+              Skor Sesi
+            </span>
+<span class="inline-flex items-center gap-1.5 font-label-sm text-text-muted">
+<span class="w-3 h-1 bg-accent-orange rounded"></span>
+              Ambang 75
+            </span>
+</div>
+</div>
+<!-- Tactile Bar Graph Representation with Rich Inline SVG -->
+<div class="w-full pt-space-md pb-space-xs">
+<div class="relative w-full h-56 flex items-end justify-between px-space-sm">
+<!-- Benchmark threshold line at 75% -->
+<div class="absolute left-0 right-0 top-[25%] border-b border-dashed border-accent-orange/60 z-0 pointer-events-none flex justify-end pr-2">
+<span class="font-label-sm text-[10px] text-accent-orange bg-surface-white px-1 -mt-2">Ambang Kompetisi (75)</span>
+</div>
+<!-- Bar 1 (72) -->
+<div class="flex flex-col items-center gap-space-xs z-10 group cursor-pointer w-1/8">
+<span class="font-label-sm font-bold text-text-muted group-hover:text-primary transition-colors">72</span>
+<div class="w-10 bg-surface-subtle group-hover:bg-primary-light rounded-t-DEFAULT h-32 flex items-end justify-center transition-all">
+<div class="w-full bg-secondary-fixed-dim group-hover:bg-primary-container rounded-t-DEFAULT transition-all" style="height: 80%"></div>
+</div>
+<span class="font-label-sm text-text-muted">08 Okt</span>
+</div>
+<!-- Bar 2 (74) -->
+<div class="flex flex-col items-center gap-space-xs z-10 group cursor-pointer w-1/8">
+<span class="font-label-sm font-bold text-text-muted group-hover:text-primary transition-colors">74</span>
+<div class="w-10 bg-surface-subtle group-hover:bg-primary-light rounded-t-DEFAULT h-32 flex items-end justify-center transition-all">
+<div class="w-full bg-secondary-fixed-dim group-hover:bg-primary-container rounded-t-DEFAULT transition-all" style="height: 83%"></div>
+</div>
+<span class="font-label-sm text-text-muted">10 Okt</span>
+</div>
+<!-- Bar 3 (76) -->
+<div class="flex flex-col items-center gap-space-xs z-10 group cursor-pointer w-1/8">
+<span class="font-label-sm font-bold text-text-muted group-hover:text-primary transition-colors">76</span>
+<div class="w-10 bg-surface-subtle group-hover:bg-primary-light rounded-t-DEFAULT h-32 flex items-end justify-center transition-all">
+<div class="w-full bg-primary-fixed-dim group-hover:bg-primary-container rounded-t-DEFAULT transition-all" style="height: 87%"></div>
+</div>
+<span class="font-label-sm text-text-muted">13 Okt</span>
+</div>
+<!-- Bar 4 (75) -->
+<div class="flex flex-col items-center gap-space-xs z-10 group cursor-pointer w-1/8">
+<span class="font-label-sm font-bold text-text-muted group-hover:text-primary transition-colors">75</span>
+<div class="w-10 bg-surface-subtle group-hover:bg-primary-light rounded-t-DEFAULT h-32 flex items-end justify-center transition-all">
+<div class="w-full bg-primary-fixed-dim group-hover:bg-primary-container rounded-t-DEFAULT transition-all" style="height: 85%"></div>
+</div>
+<span class="font-label-sm text-text-muted">16 Okt</span>
+</div>
+<!-- Bar 5 (79) -->
+<div class="flex flex-col items-center gap-space-xs z-10 group cursor-pointer w-1/8">
+<span class="font-label-sm font-bold text-text-muted group-hover:text-primary transition-colors">79</span>
+<div class="w-10 bg-surface-subtle group-hover:bg-primary-light rounded-t-DEFAULT h-32 flex items-end justify-center transition-all">
+<div class="w-full bg-primary-container rounded-t-DEFAULT transition-all" style="height: 90%"></div>
+</div>
+<span class="font-label-sm text-text-muted">19 Okt</span>
+</div>
+<!-- Bar 6 (80) -->
+<div class="flex flex-col items-center gap-space-xs z-10 group cursor-pointer w-1/8">
+<span class="font-label-sm font-bold text-text-muted group-hover:text-primary transition-colors">80</span>
+<div class="w-10 bg-surface-subtle group-hover:bg-primary-light rounded-t-DEFAULT h-32 flex items-end justify-center transition-all">
+<div class="w-full bg-primary-container rounded-t-DEFAULT transition-all" style="height: 93%"></div>
+</div>
+<span class="font-label-sm text-text-muted">21 Okt</span>
+</div>
+<!-- Bar 7 (84 - Peak) -->
+<div class="flex flex-col items-center gap-space-xs z-10 group cursor-pointer w-1/8">
+<span class="font-label-sm font-bold text-primary px-1.5 py-0.5 bg-primary-light rounded-full text-[11px]">84!</span>
+<div class="w-10 bg-primary-light rounded-t-DEFAULT h-32 flex items-end justify-center shadow-[0_4px_12px_rgba(32,184,122,0.3)]">
+<div class="w-full bg-primary rounded-t-DEFAULT transition-all" style="height: 98%"></div>
+</div>
+<span class="font-label-sm text-primary font-bold">Hari ini</span>
+</div>
+</div>
+</div>
+<div class="p-space-sm bg-surface-subtle rounded-DEFAULT flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">lightbulb</span>
+<span class="font-body-sm text-body-sm text-on-surface">Lonjakan tertinggi terjadi pada sesi <strong>Motion AI Ethics (21 Okt)</strong>.</span>
+</div>
+<span class="font-label-sm text-primary font-bold cursor-pointer hover:underline">Detail Sesi →</span>
+</div>
+</div>
+<!-- Deep Dual-Dimension Breakdown -->
+<div class="bg-surface-white rounded-DEFAULT p-space-lg shadow-[0_4px_16px_rgba(23,78,67,0.05)] flex flex-col gap-space-lg">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Analisis Dua Dimensi Mendalam</h2>
+<span class="font-label-sm text-text-muted">Formula Scoring Rubrik WUDC</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted">
+            Membedakan substansi argumen logis dari kemahiran performa linguistik bahasa Inggris.
+          </p>
+</div>
+<!-- Grid of the two pillars -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- Dimension 1: Debate Skills -->
+<div class="flex flex-col gap-space-md p-space-md bg-background-cream rounded-DEFAULT">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-[12px]">1</div>
+<span class="font-headline-sm text-[16px] text-on-surface">Dimensi Debat</span>
+</div>
+<span class="font-label-lg text-primary font-bold">Rata-rata 79%</span>
+</div>
+<!-- Item 1 -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center font-body-sm">
+<span class="font-semibold text-on-surface">Logika A-R-E-L</span>
+<div class="flex items-center gap-1.5">
+<span class="font-bold text-primary">85%</span>
+<span class="px-1.5 py-0.2 rounded bg-primary-light text-primary font-label-sm text-[10px]">Sangat Baik</span>
+</div>
+</div>
+<div class="w-full bg-surface-white rounded-full h-2 overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 85%"></div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center font-body-sm">
+<span class="font-semibold text-on-surface">Peran Podium (LO)</span>
+<div class="flex items-center gap-1.5">
+<span class="font-bold text-on-surface">80%</span>
+<span class="px-1.5 py-0.2 rounded bg-secondary-container/50 text-secondary font-label-sm text-[10px]">Solid</span>
+</div>
+</div>
+<div class="w-full bg-surface-white rounded-full h-2 overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 80%"></div>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center font-body-sm">
+<span class="font-semibold text-on-surface">Rebuttal &amp; Clashing</span>
+<div class="flex items-center gap-1.5">
+<span class="font-bold text-accent-orange">72%</span>
+<span class="px-1.5 py-0.2 rounded bg-accent-orange/15 text-accent-orange font-label-sm text-[10px]">Butuh Latihan</span>
+</div>
+</div>
+<div class="w-full bg-surface-white rounded-full h-2 overflow-hidden">
+<div class="bg-accent-orange h-full rounded-full" style="width: 72%"></div>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center font-body-sm">
+<span class="font-semibold text-on-surface">Comparative Weighing</span>
+<div class="flex items-center gap-1.5">
+<span class="font-bold text-accent-coral">68%</span>
+<span class="px-1.5 py-0.2 rounded bg-accent-coral/15 text-accent-coral font-label-sm text-[10px]">Perlu Perhatian</span>
+</div>
+</div>
+<div class="w-full bg-surface-white rounded-full h-2 overflow-hidden">
+<div class="bg-accent-coral h-full rounded-full" style="width: 68%"></div>
+</div>
+</div>
+</div>
+<!-- Dimension 2: English Skills -->
+<div class="flex flex-col gap-space-md p-space-md bg-background-cream rounded-DEFAULT">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-accent-purple text-on-primary flex items-center justify-center font-bold text-[12px]">2</div>
+<span class="font-headline-sm text-[16px] text-on-surface">Dimensi Bahasa Inggris</span>
+</div>
+<span class="font-label-lg text-accent-purple font-bold">83% • CEFR C1</span>
+</div>
+<!-- Item 1 -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center font-body-sm">
+<span class="font-semibold text-on-surface">Diksi Akademik C1</span>
+<div class="flex items-center gap-1.5">
+<span class="font-bold text-on-surface">82%</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-subtle text-text-muted font-label-sm text-[10px]">Fluent</span>
+</div>
+</div>
+<div class="w-full bg-surface-white rounded-full h-2 overflow-hidden">
+<div class="bg-accent-purple h-full rounded-full" style="width: 82%"></div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center font-body-sm">
+<span class="font-semibold text-on-surface">Kelancaran &amp; Tempo</span>
+<div class="flex items-center gap-1.5">
+<span class="font-bold text-primary">88%</span>
+<span class="px-1.5 py-0.2 rounded bg-primary-light text-primary font-label-sm text-[10px]">138 WPM</span>
+</div>
+</div>
+<div class="w-full bg-surface-white rounded-full h-2 overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 88%"></div>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center font-body-sm">
+<span class="font-semibold text-on-surface">Kontrol Filler Words</span>
+<div class="flex items-center gap-1.5">
+<span class="font-bold text-accent-orange">78%</span>
+<span class="px-1.5 py-0.2 rounded bg-accent-orange/15 text-accent-orange font-label-sm text-[10px]">-45% Umm/Like</span>
+</div>
+</div>
+<div class="w-full bg-surface-white rounded-full h-2 overflow-hidden">
+<div class="bg-accent-orange h-full rounded-full" style="width: 78%"></div>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center font-body-sm">
+<span class="font-semibold text-on-surface">Tata Bahasa &amp; Struktur</span>
+<div class="flex items-center gap-1.5">
+<span class="font-bold text-on-surface">84%</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-subtle text-text-muted font-label-sm text-[10px]">Kukuh</span>
+</div>
+</div>
+<div class="w-full bg-surface-white rounded-full h-2 overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 84%"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- RIGHT COLUMN: AI Diagnosis Patterns & Gamified Badge Collection (5 Cols) -->
+<section class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- AI Diagnosis & Actionable Drills -->
+<div class="bg-surface-white rounded-DEFAULT p-space-lg shadow-[0_4px_16px_rgba(23,78,67,0.05)] flex flex-col gap-space-md relative overflow-hidden">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">psychology</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Pola Evaluasi &amp; Area Fokus</h2>
+<span class="font-label-sm text-text-muted">Coach Kiko AI Diagnosis</span>
+</div>
+</div>
+<span class="px-2 py-1 rounded-full bg-accent-orange/15 text-accent-orange font-label-sm font-bold">2 Prioritas</span>
+</div>
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<!-- Alert Box 1: Missing Link Premise -->
+<div class="p-space-md rounded-DEFAULT bg-surface-subtle flex flex-col gap-1.5 transition-all hover:bg-surface-container-high/40">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-accent-coral font-label-md font-bold">
+<span class="material-symbols-outlined text-[18px]">warning</span>
+<span>Lompatan Sebab-Akibat (Missing Link)</span>
+</div>
+<span class="font-label-sm text-text-muted bg-surface-white px-2 py-0.5 rounded-full">Muncul 4x</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Anda sering langsung meloncat ke dampak tanpa membuktikan <em>mekanisme logis</em> di tengah: “Mengapa pihak terdampak pasti bertindak sesuai asumsi Anda?”
+            </p>
+<div class="flex items-center gap-1 text-primary font-label-sm mt-1">
+<span class="material-symbols-outlined text-[14px]">tips_and_updates</span>
+<span>Tips Coach Kiko: Terapkan metode 3-langkah ‘Even If’.</span>
+</div>
+</div>
+<!-- Alert Box 2: Filler Words -->
+<div class="p-space-md rounded-DEFAULT bg-surface-subtle flex flex-col gap-1.5 transition-all hover:bg-surface-container-high/40">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-accent-orange font-label-md font-bold">
+<span class="material-symbols-outlined text-[18px]">mic_off</span>
+<span>Filler Words ‘Umm’ / ‘Like’</span>
+</div>
+<span class="font-label-sm text-text-muted bg-surface-white px-2 py-0.5 rounded-full">4x per pidato</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Terjadi terutama saat transisi dari Rebuttal menuju Argumen Substantif kedua.
+            </p>
+<div class="flex items-center gap-1 text-primary font-label-sm mt-1">
+<span class="material-symbols-outlined text-[14px]">pause_circle</span>
+<span>Gunakan jeda hening (silent pause) 1 detik ketimbang gumaman.</span>
+</div>
+</div>
+</div>
+<!-- Tactile 3D Action Push CTA -->
+<div class="pt-space-xs">
+<button class="w-full bg-primary-container hover:bg-primary text-on-primary py-space-sm px-space-md rounded-DEFAULT font-label-lg font-bold flex items-center justify-center gap-2 shadow-[0_4px_0_#004128] active:translate-y-1 active:shadow-none transition-all">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+<span>Latih Rekomendasi Hari Ini (Drill Rebuttal Kilat +30 XP)</span>
+</button>
+</div>
+</div>
+<!-- Gamified Badge Showcase & Certification -->
+<div class="bg-surface-white rounded-DEFAULT p-space-lg shadow-[0_4px_16px_rgba(23,78,67,0.05)] flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Koleksi Badge &amp; Pencapaian</h2>
+<p class="font-body-sm text-body-sm text-text-muted">Apresiasi konsistensi &amp; kemenangan latihan</p>
+</div>
+<span class="font-label-sm text-primary font-bold">3 Didapat</span>
+</div>
+<!-- Badges Mosaic Grid -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<!-- Badge 1: First Motion Cleared -->
+<div class="p-space-sm bg-background-cream rounded-DEFAULT flex items-center gap-space-sm hover:scale-[1.02] transition-transform">
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary flex items-center justify-center flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[24px]">flag</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-bold truncate">First Motion</span>
+<span class="font-body-sm text-primary font-semibold text-[11px]">Selesai</span>
+</div>
+</div>
+<!-- Badge 2: 5-Day Streak Master -->
+<div class="p-space-sm bg-background-cream rounded-DEFAULT flex items-center gap-space-sm hover:scale-[1.02] transition-transform">
+<div class="w-12 h-12 rounded-full bg-accent-orange text-on-primary flex items-center justify-center flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[24px]">local_fire_department</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-bold truncate">Streak Master</span>
+<span class="font-body-sm text-accent-orange font-semibold text-[11px]">5 Hari Beruntun</span>
+</div>
+</div>
+<!-- Badge 3: Rebuttal Assassin -->
+<div class="p-space-sm bg-background-cream rounded-DEFAULT flex items-center gap-space-sm hover:scale-[1.02] transition-transform">
+<div class="w-12 h-12 rounded-full bg-accent-purple text-on-primary flex items-center justify-center flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[24px]">gavel</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-bold truncate">Rebuttal Ace</span>
+<span class="font-body-sm text-accent-purple font-semibold text-[11px]">Score Rebuttal &gt;80</span>
+</div>
+</div>
+<!-- Badge 4: BP Tournament Ready (In-Progress) -->
+<div class="p-space-sm bg-surface-subtle/70 rounded-DEFAULT flex items-center gap-space-sm opacity-80">
+<div class="w-12 h-12 rounded-full bg-surface-variant text-text-muted flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">trophy</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-bold truncate">Tournament Ready</span>
+<span class="font-body-sm text-text-muted text-[11px]">8/10 Sesi</span>
+</div>
+</div>
+</div>
+<!-- Next Milestone Banner -->
+<div class="mt-space-xs p-space-md rounded-DEFAULT bg-surface-container-high/60 flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-white text-secondary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[20px]">workspace_premium</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-on-surface font-bold">Sertifikasi Role LO Mastery</span>
+<span class="font-body-sm text-text-muted">Target capaian: Nilai peran podium &gt;85% di 2 sesi lagi.</span>
+</div>
+</div>
+<span class="px-2 py-1 bg-surface-white text-secondary font-label-sm font-bold rounded-DEFAULT shadow-xs">Segera</span>
+</div>
+</div>
+</section>
+</div>
+</div></main></div></body></html>

@@ -1,0 +1,8 @@
+.git
+.github
+node_modules
+vendor
+public/build
+.env
+design/*.zip
+*.log

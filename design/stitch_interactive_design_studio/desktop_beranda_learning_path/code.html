@@ -1,0 +1,450 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Nunito+Sans:wght@700;800;900&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-background": "#091f19", "error": "#ba1a1a", "on-error": "#ffffff", "primary-fixed": "#74fbb7", "on-tertiary-fixed": "#161f00", "error-container": "#ffdad6", "surface-tint": "#006c45", "primary": "#006c45", "surface-container-lowest": "#ffffff", "secondary-fixed-dim": "#9bd1c3", "outline": "#6d7a70", "on-primary-fixed": "#002112", "on-tertiary-fixed-variant": "#3b4d00", "surface-container-low": "#e0f9ee", "on-error-container": "#93000a", "surface-bright": "#e6fff4", "surface-container-high": "#d4eee3", "secondary": "#33675b", "surface": "#e6fff4", "on-tertiary-container": "#2f3e00", "surface-dim": "#c6e0d5", "on-secondary": "#ffffff", "background-cream": "#F9FAF3", "inverse-primary": "#55de9c", "border-clean": "#DDE7DE", "secondary-fixed": "#b7eede", "text-muted": "#6C7973", "on-primary-container": "#004128", "primary-fixed-dim": "#55de9c", "accent-coral": "#EF6D6D", "secondary-container": "#b7eede", "surface-container-highest": "#cfe8de", "primary-container": "#20b87a", "accent-purple": "#8668E8", "on-secondary-fixed": "#00201a", "on-primary": "#ffffff", "primary-light": "#E8F8F1", "surface-container": "#daf4e9", "outline-variant": "#bccabe", "on-surface": "#091f19", "tertiary-container": "#92ac4a", "accent-orange": "#FFB14A", "inverse-surface": "#1f352e", "tertiary-fixed": "#d2ee84", "on-secondary-fixed-variant": "#184f44", "on-surface-variant": "#3d4a41", "surface-variant": "#cfe8de", "tertiary-fixed-dim": "#b6d16b", "tertiary": "#506606", "on-tertiary": "#ffffff", "background": "#e6fff4", "on-primary-fixed-variant": "#005233", "surface-white": "#FFFFFF", "surface-subtle": "#F1F4EC", "inverse-on-surface": "#ddf7ec", "on-secondary-container": "#3a6d61" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "gutter-desktop": "1.5rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "margin-tablet": "1.5rem", "space-md": "1rem", "gutter": "1rem", "margin-desktop": "2.5rem", "space-2xl": "3rem", "margin": "1rem", "space-xl": "2rem", "space-xs": "0.25rem" }, "fontFamily": { "metric-display": [ "Nunito Sans" ], "headline-xl-mobile": [ "Nunito Sans" ], "body-md": [ "Inter" ], "headline-xl": [ "Nunito Sans" ], "headline-sm": [ "Nunito Sans" ], "label-lg": [ "Inter" ], "headline-lg": [ "Nunito Sans" ], "body-lg": [ "Inter" ], "label-md": [ "Inter" ], "headline-lg-mobile": [ "Nunito Sans" ], "label-sm": [ "Inter" ], "body-sm": [ "Inter" ], "headline-md": [ "Nunito Sans" ] }, "fontSize": { "metric-display": [ "32px", { "lineHeight": "36px", "fontWeight": "900" } ], "headline-xl-mobile": [ "28px", { "lineHeight": "36px", "fontWeight": "800" } ], "body-md": [ "14px", { "lineHeight": "20px", "fontWeight": "400" } ], "headline-xl": [ "36px", { "lineHeight": "44px", "fontWeight": "800" } ], "headline-sm": [ "18px", { "lineHeight": "24px", "fontWeight": "700" } ], "label-lg": [ "15px", { "lineHeight": "20px", "fontWeight": "600" } ], "headline-lg": [ "28px", { "lineHeight": "36px", "fontWeight": "800" } ], "body-lg": [ "16px", { "lineHeight": "24px", "fontWeight": "400" } ], "label-md": [ "13px", { "lineHeight": "18px", "fontWeight": "600" } ], "headline-lg-mobile": [ "24px", { "lineHeight": "32px", "fontWeight": "700" } ], "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.5px", "fontWeight": "700" } ], "body-sm": [ "12px", { "lineHeight": "16px", "fontWeight": "400" } ], "headline-md": [ "22px", { "lineHeight": "28px", "fontWeight": "700" } ] } } } };</script></head><body class="bg-background-cream text-on-surface antialiased min-h-screen selection:bg-primary-fixed selection:text-on-primary-fixed"><aside class="fixed left-0 top-0 h-full w-[260px] bg-surface-white z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="p-space-lg flex flex-col gap-space-xs"><div class="flex items-center gap-space-sm"><div class="w-10 h-10 rounded-DEFAULT bg-primary-container flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-2xl">forum</span></div><div class="flex flex-col"><span class="font-headline-md text-headline-md tracking-tight text-on-surface font-extrabold leading-none">Argumenta</span><span class="text-[10px] uppercase font-bold tracking-wider text-secondary mt-1">Debate &amp; Speech</span></div></div><div class="mt-space-sm"><span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-primary-light text-primary font-label-sm text-label-sm tracking-wide font-bold">AI DEBATE COACH</span></div></div><nav class="flex flex-col gap-1 px-space-md mt-space-sm" data-active-classes="bg-primary-light text-primary font-bold shadow-sm"><a aria-current="page" class="flex items-center gap-space-md px-space-md py-3 rounded-DEFAULT transition-all group bg-primary-light text-primary font-bold shadow-sm" data-path="beranda" href="#"><span class="material-symbols-outlined text-xl transition-colors group-hover:text-primary">home</span><span class="">Beranda</span></a><a class="flex items-center gap-space-md px-space-md py-3 rounded-DEFAULT text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-subtle hover:text-on-surface transition-all group" data-path="latihan" href="#"><span class="material-symbols-outlined text-xl transition-colors group-hover:text-primary">model_training</span><span class="">Latihan</span></a><a class="flex items-center gap-space-md px-space-md py-3 rounded-DEFAULT text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-subtle hover:text-on-surface transition-all group" data-path="coach-kiko" href="#"><span class="material-symbols-outlined text-xl transition-colors group-hover:text-primary">smart_toy</span><span class="">Tanya Coach Kiko</span></a><a class="flex items-center gap-space-md px-space-md py-3 rounded-DEFAULT text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-subtle hover:text-on-surface transition-all group" data-path="progres" href="#"><span class="material-symbols-outlined text-xl transition-colors group-hover:text-primary">monitoring</span><span class="">Progres</span></a><a class="flex items-center gap-space-md px-space-md py-3 rounded-DEFAULT text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-subtle hover:text-on-surface transition-all group" data-path="profil" href="#"><span class="material-symbols-outlined text-xl transition-colors group-hover:text-primary">person_search</span><span class="">Profil</span></a></nav></div><div class="p-space-md flex flex-col gap-space-sm"><div class="p-space-md rounded-DEFAULT bg-surface-subtle flex flex-col gap-2.5 shadow-xs border border-outline-variant/30"><div class="flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><div class="relative w-10 h-10 rounded-full bg-primary flex items-center justify-center shrink-0 ring-2 ring-primary-container/40"><span class="material-symbols-outlined text-on-primary text-[20px]">person</span><span class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-primary-container ring-2 ring-surface-white" title="Online Aktif"></span></div><div class="flex flex-col min-w-0"><span class="font-label-md text-label-md font-extrabold text-on-surface truncate">Aisha Nurhaliza</span><span class="font-label-sm text-[11px] text-primary font-bold truncate">Lv. 3 Junior Debater</span><span class="font-body-sm text-[11px] text-text-muted truncate">Universitas Indonesia</span></div></div><a href="#" class="w-7 h-7 rounded-full bg-surface-white flex items-center justify-center text-text-muted hover:text-primary transition-colors shadow-xs" title="Ganti Akun"><span class="material-symbols-outlined text-[16px]">switch_account</span></a></div><div class="flex flex-col gap-1 pt-1"><div class="flex justify-between items-center text-[10px] font-bold text-text-muted"><span class="uppercase tracking-wider">Progres ke Lv. 4</span><span class="text-primary font-extrabold">40 XP Lagi</span></div><div class="w-full h-1.5 rounded-full bg-surface-container overflow-hidden"><div class="h-full bg-primary-container rounded-full w-[72%]"></div></div></div></div><div class="flex items-center justify-between px-space-sm py-1"><a class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" data-path="pengaturan" href="#"><span class="material-symbols-outlined text-base">settings</span><span class="">Pengaturan</span></a><a class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant hover:text-error transition-colors" data-path="masuk" href="#"><span class="material-symbols-outlined text-base">logout</span><span class="">Keluar</span></a></div></div></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 h-16 bg-surface-white/90 backdrop-blur-md z-40 flex items-center justify-between px-space-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-sm"><div class="flex items-center gap-2 font-body-sm text-body-sm text-text-muted"><span class="material-symbols-outlined text-base">school</span><span class="">Argumenta</span><span class="text-outline-variant">/</span><span class="font-label-md text-label-md font-bold text-on-surface">Arena Debat</span></div><span class="hidden lg:inline-flex items-center px-space-sm py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold uppercase tracking-wide ml-space-sm">BP Format</span></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-accent-orange/15 text-accent-orange font-label-md text-label-md font-extrabold"><span class="material-symbols-outlined text-base">local_fire_department</span><span class="">5 Hari Streak</span></div><div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-light text-primary font-label-md text-label-md font-extrabold"><span class="material-symbols-outlined text-base">bolt</span><span class="">560 XP</span></div><div class="flex items-center bg-surface-subtle p-0.5 rounded-full text-label-sm font-label-sm"><button class="px-2 py-0.5 rounded-full bg-surface-white text-on-surface font-bold shadow-xs" type="button">ID</button><button class="px-2 py-0.5 rounded-full text-text-muted hover:text-on-surface transition-colors" type="button">EN</button></div><button class="w-9 h-9 rounded-full bg-surface-subtle flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-primary-light transition-all" type="button"><span class="material-symbols-outlined text-xl">notifications</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 min-h-screen bg-background-cream w-full px-space-xl py-space-xl"><div class="flex flex-col w-full gap-space-xl">
+<!-- Top Welcome Notification Pill -->
+<div class="flex flex-wrap items-center justify-between gap-space-md p-space-md bg-surface-container-low rounded-DEFAULT text-on-surface shadow-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="flex h-3 w-3 relative">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
+</span>
+<span class="font-label-md text-label-md font-bold text-primary">Sesi Penjurian AI Siap</span>
+<span class="text-outline-variant font-label-md text-label-md">•</span>
+<p class="font-body-md text-body-md text-on-surface-variant truncate">Turnamen internal mingguan dibuka dalam 2 hari. Maksimalkan modul mekanisme Anda!</p>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-text-muted">Rank Saat Ini:</span>
+<span class="px-space-sm py-1 rounded-full bg-surface-white font-label-md text-label-md font-extrabold text-secondary shadow-xs">Top 8% Jawa Barat</span>
+</div>
+</div>
+<!-- Main 2-Column Responsive Bento Layout (68% / 32%) -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-xl items-start">
+<!-- LEFT COLUMN: Learning Journey & Hero (68% -> xl:col-span-8) -->
+<div class="xl:col-span-8 flex flex-col gap-space-xl min-w-0">
+<!-- Tactile Welcome Hero with Mascot Kiko -->
+<div class="relative overflow-hidden rounded-lg bg-surface-white p-space-xl shadow-md">
+<!-- Ambient decorative backdrop circles -->
+<div class="absolute -right-12 -top-12 w-64 h-64 rounded-full bg-primary-light/60 blur-2xl pointer-events-none"></div>
+<div class="absolute right-40 -bottom-10 w-44 h-44 rounded-full bg-tertiary-fixed/40 blur-xl pointer-events-none"></div>
+<div class="relative z-10 grid grid-cols-1 md:grid-cols-12 gap-space-lg items-center">
+<div class="md:col-span-8 flex flex-col gap-space-md">
+<div class="flex items-center gap-2">
+<span class="px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm uppercase font-extrabold tracking-wider">
+                Modul Inti BP Debate
+              </span>
+<span class="flex items-center gap-1 font-body-sm text-body-sm text-text-muted">
+<span class="material-symbols-outlined text-[16px] text-accent-orange">stars</span>
+                Rekomendasi Hari Ini
+              </span>
+</div>
+<div class="flex flex-col gap-1">
+<h1 class="font-headline-lg text-headline-lg font-extrabold text-on-surface leading-snug">
+                Siap mempertajam argumen hari ini?
+              </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                Lanjutkan modul <strong class="text-primary font-bold">Mekanisme &amp; Dampak</strong> bersama Coach Kiko untuk mengunci skor juri di ronde semifinal!
+              </p>
+</div>
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<!-- Tactile 3D Button -->
+<button class="group relative inline-flex items-center justify-center gap-space-sm px-6 py-3.5 rounded-DEFAULT bg-primary-container text-on-primary font-label-lg text-label-lg font-extrabold shadow-sm border-b-4 border-on-primary-container active:translate-y-1 active:border-b-0 transition-all cursor-pointer" type="button">
+<span class="material-symbols-outlined text-xl">play_circle</span>
+<span class="">Lanjutkan Latihan</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-white/20 text-on-primary text-label-sm font-bold ml-1">+35 XP</span>
+</button>
+<button class="inline-flex items-center gap-2 px-4 py-3 rounded-DEFAULT bg-surface-subtle text-on-surface font-label-md text-label-md font-bold hover:bg-surface-container transition-all cursor-pointer" type="button">
+<span class="material-symbols-outlined text-lg text-text-muted">menu_book</span>
+<span class="">Baca Ringkasan Teori</span>
+</button>
+</div>
+</div>
+<!-- Coach Kiko Visual Element -->
+<div class="md:col-span-4 flex flex-col items-center justify-center relative">
+<div class="relative w-44 h-44 rounded-full bg-surface-container-low flex items-center justify-center p-3 shadow-inner">
+<img class="w-full h-full object-contain rounded-full drop-shadow-md" data-alt="A charming friendly 3D cartoon mentor mascot owl named Kiko wearing collegiate debate spectacles and a dark green blazer holding an adjudication stopwatch, modern soft lighting, vibrant teal and lime accents on clean warm cream background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFM3V2MwLESJs3UGnREn8P2kVLzZyh2RddMZnp3l-2iIa_esynwqYerJaK8DbAhJ5rNPixOv24DHZDuNCitRhTSFWDv9sThP1jnza0V8Brt0yw0f2Giupzh7LqXJKmm-gXMY5KsYB6qoARjygQOJ1nJhTnRp86yWPQ4zRhbWz6yMi_hifzBokiVDvp0P2C-VVgEoIO9GDx33D2luAUHeuFps_PQj7rYAr_Se3tWAIUkcDioM26l7oU">
+<div class="absolute -bottom-2 bg-surface-white px-3 py-1 rounded-full shadow-md flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm font-extrabold text-on-surface">Kiko Aktif Menyimak</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Vertical Skill Journey Map (Spacious Desktop Flow) -->
+<div class="flex flex-col gap-space-md bg-surface-white rounded-lg p-space-xl shadow-sm">
+<div class="flex flex-wrap items-center justify-between gap-space-sm pb-space-sm">
+<div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl">route</span>
+<h2 class="font-headline-md text-headline-md font-extrabold text-on-surface">Peta Perjalanan Debater</h2>
+</div>
+<p class="font-body-md text-body-md text-text-muted mt-0.5">Jalur kompetensi British Parliamentary (BP) &amp; Asian Parliamentary Speech</p>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-3 py-1 rounded-full bg-surface-subtle text-on-surface-variant font-label-sm text-label-sm font-bold">2 / 5 Selesai (40%)</span>
+</div>
+</div>
+<!-- Stepper Timeline Canvas -->
+<div class="relative flex flex-col gap-space-lg pt-space-md pl-4 md:pl-8">
+<!-- Background continuous vertical spine -->
+<div class="absolute left-8 md:left-12 top-6 bottom-10 w-1 bg-surface-subtle -translate-x-1/2 rounded-full"></div>
+<!-- Node 1: Dasar Klaim & Bukti (Completed) -->
+<div class="relative flex items-start gap-space-lg group">
+<div class="relative z-10 w-9 h-9 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-md ring-4 ring-surface-white shrink-0">
+<span class="material-symbols-outlined text-lg">check</span>
+</div>
+<div class="flex-1 p-space-md rounded-DEFAULT bg-surface-subtle/80 flex flex-wrap items-center justify-between gap-space-sm transition-all hover:bg-surface-subtle">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wide">Tahap 01 • Selesai</span>
+<span class="text-outline-variant text-label-sm">•</span>
+<span class="font-body-sm text-body-sm text-text-muted">Skor: 94/100</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-extrabold text-on-surface">Dasar Klaim &amp; Bukti Empiris</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Membangun premise solid tanpa cacat logika false dichotomy.</p>
+</div>
+<button class="px-3 py-1.5 rounded-full bg-surface-white text-secondary font-label-md text-label-md font-bold shadow-xs hover:text-primary transition-colors flex items-center gap-1" type="button">
+<span class="">Ulas Materi</span>
+<span class="material-symbols-outlined text-base">replay</span>
+</button>
+</div>
+</div>
+<!-- Node 2: Struktur Pidato A-R-E-L (Completed) -->
+<div class="relative flex items-start gap-space-lg group">
+<div class="relative z-10 w-9 h-9 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-md ring-4 ring-surface-white shrink-0">
+<span class="material-symbols-outlined text-lg">check</span>
+</div>
+<div class="flex-1 p-space-md rounded-DEFAULT bg-surface-subtle/80 flex flex-wrap items-center justify-between gap-space-sm transition-all hover:bg-surface-subtle">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wide">Tahap 02 • Selesai</span>
+<span class="text-outline-variant text-label-sm">•</span>
+<span class="font-body-sm text-body-sm text-text-muted">Skor: 88/100</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-extrabold text-on-surface">Struktur Pidato A-R-E-L (Assertion, Reasoning, Evidence, Link-back)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Koneksi klaim kembali ke mosi debat secara kohesif.</p>
+</div>
+<button class="px-3 py-1.5 rounded-full bg-surface-white text-secondary font-label-md text-label-md font-bold shadow-xs hover:text-primary transition-colors flex items-center gap-1" type="button">
+<span class="">Ulas Rekaman</span>
+<span class="material-symbols-outlined text-base">replay</span>
+</button>
+</div>
+</div>
+<!-- Node 3: CURRENT ACTIVE NODE (Mekanisme & Dampak) -->
+<div class="relative flex items-start gap-space-lg">
+<!-- Pulsing active circle marker -->
+<div class="relative z-10 w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-lg ring-4 ring-primary-light shrink-0">
+<span class="material-symbols-outlined text-xl">bolt</span>
+</div>
+<!-- Wide Active Highlight Card -->
+<div class="flex-1 p-space-lg rounded-DEFAULT bg-primary-light flex flex-col gap-space-md shadow-md">
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<span class="px-3 py-1 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm uppercase font-extrabold tracking-wider">
+                  Sedang Dipelajari • Tahap 03
+                </span>
+<div class="flex items-center gap-2 text-primary font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-base">timer</span>
+<span class="">Estimasi: 12 Menit</span>
+</div>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md font-extrabold text-on-surface leading-tight">
+                  Mekanisme &amp; Dampak Nyata (Actor Incentive &amp; Urgency)
+                </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+                  Pelajari cara meyakinkan panel juri bahwa solusi Anda tidak hanya ideal di atas kertas, tetapi memiliki insentif struktural yang realistis dan menghasilkan dampak sistemik paling signifikan.
+                </p>
+</div>
+<!-- Interactive drill checkpoints -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm pt-space-xs">
+<div class="p-3 rounded-DEFAULT bg-surface-white/90 flex flex-col gap-1 shadow-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-text-muted">Sub-drill 1</span>
+<span class="material-symbols-outlined text-primary text-base">check_circle</span>
+</div>
+<span class="font-label-md text-label-md font-bold text-on-surface">Peta Insentif Pelaku</span>
+</div>
+<div class="p-3 rounded-DEFAULT bg-surface-white flex flex-col gap-1 shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-primary">Sub-drill 2</span>
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+</div>
+<span class="font-label-md text-label-md font-bold text-on-surface">Rantai Kausalitas</span>
+</div>
+<div class="p-3 rounded-DEFAULT bg-surface-white/50 flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-text-muted">Sub-drill 3</span>
+<span class="material-symbols-outlined text-text-muted text-base">lock</span>
+</div>
+<span class="font-label-md text-label-md font-bold text-text-muted">Quantifying Impact</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center justify-between gap-space-md pt-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center font-extrabold text-label-sm">
+                    AI
+                  </div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Evaluator: Coach Kiko Speech Analyzer v2.4</span>
+</div>
+<button class="group relative inline-flex items-center gap-space-sm px-6 py-3 rounded-DEFAULT bg-primary-container text-on-primary font-label-lg text-label-lg font-extrabold shadow-sm border-b-4 border-on-primary-container active:translate-y-1 active:border-b-0 transition-all cursor-pointer" type="button">
+<span class="">Mulai Sub-Drill 2</span>
+<span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Node 4: Teknik Rebuttal & Clashing (Locked) -->
+<div class="relative flex items-start gap-space-lg opacity-60">
+<div class="relative z-10 w-9 h-9 rounded-full bg-surface-container-highest text-text-muted flex items-center justify-center shadow-xs ring-4 ring-surface-white shrink-0">
+<span class="material-symbols-outlined text-base">lock</span>
+</div>
+<div class="flex-1 p-space-md rounded-DEFAULT bg-surface-subtle/50 flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-text-muted font-bold uppercase tracking-wide">Tahap 04 • Terkunci</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-text-muted">Teknik Rebuttal &amp; Direct Clashing</h3>
+<p class="font-body-sm text-body-sm text-text-muted">Membongkar asumsi tersembunyi tim lawan secara instan.</p>
+</div>
+<span class="px-3 py-1 rounded-full bg-surface-container text-text-muted font-label-sm text-label-sm">Selesaikan Tahap 03</span>
+</div>
+</div>
+<!-- Node 5: Comparative Weighing (Locked) -->
+<div class="relative flex items-start gap-space-lg opacity-60">
+<div class="relative z-10 w-9 h-9 rounded-full bg-surface-container-highest text-text-muted flex items-center justify-center shadow-xs ring-4 ring-surface-white shrink-0">
+<span class="material-symbols-outlined text-base">lock</span>
+</div>
+<div class="flex-1 p-space-md rounded-DEFAULT bg-surface-subtle/50 flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-text-muted font-bold uppercase tracking-wide">Tahap 05 • Terkunci</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-text-muted">Comparative Weighing &amp; Even-If Matrix</h3>
+<p class="font-body-sm text-body-sm text-text-muted">Menang di skenario terburuk ("Even if their case is true...").</p>
+</div>
+<span class="px-3 py-1 rounded-full bg-surface-container text-text-muted font-label-sm text-label-sm">Selesaikan Tahap 04</span>
+</div>
+</div>
+<!-- Milestone Trophy: Role Leader of Opposition Mastery -->
+<div class="relative flex items-center gap-space-lg pt-space-xs">
+<div class="relative z-10 w-9 h-9 rounded-full bg-accent-orange/20 text-accent-orange flex items-center justify-center ring-4 ring-surface-white shrink-0">
+<span class="material-symbols-outlined text-xl">military_tech</span>
+</div>
+<div class="flex-1 p-space-md rounded-DEFAULT bg-surface-container-low flex flex-wrap items-center justify-between gap-space-md shadow-xs">
+<div class="flex items-center gap-space-md">
+<div class="w-11 h-11 rounded-DEFAULT bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed shadow-xs shrink-0">
+<span class="material-symbols-outlined text-2xl">trophy</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm font-extrabold text-secondary uppercase tracking-wider">Milestone Sertifikasi</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-white text-primary text-label-sm font-bold">+150 XP</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm font-extrabold text-on-surface">Role Leader of Opposition Mastery</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Badge digital resmi + Akses ke Simulasi BP Open Cup.</p>
+</div>
+</div>
+<button class="px-4 py-2 rounded-full bg-surface-white text-secondary font-label-md text-label-md font-bold shadow-xs hover:bg-surface-subtle transition-all cursor-not-allowed opacity-75" type="button">
+                Kunci Terbuka di Tahap 5
+              </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Drill Banner: Tantangan Kilat 60 Detik -->
+<div class="relative overflow-hidden rounded-lg bg-surface-white p-space-lg shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-lg">
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-2xl bg-accent-coral/15 text-accent-coral flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-3xl animate-bounce">alarm</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-full bg-accent-coral text-on-error font-label-sm text-label-sm font-bold tracking-wider uppercase">Tantangan Kilat</span>
+<span class="font-body-sm text-body-sm text-text-muted">POIs &amp; Counter-attack</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-extrabold text-on-surface mt-0.5">
+              Bangun Sanggahan Tajam dalam 60 Detik!
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Dengarkan argumen lawan acak dari AI lalu rekam rebuttal instan.
+            </p>
+</div>
+</div>
+<button class="shrink-0 inline-flex items-center gap-2 px-6 py-3 rounded-DEFAULT bg-secondary text-on-secondary font-label-lg text-label-lg font-extrabold shadow-sm hover:bg-on-secondary-fixed-variant transition-all cursor-pointer" type="button">
+<span class="material-symbols-outlined text-xl">swords</span>
+<span class="">Mulai Tanding</span>
+</button>
+</div>
+</div>
+<!-- RIGHT COLUMN: Contextual Rail (32% -> xl:col-span-4) -->
+<div class="xl:col-span-4 flex flex-col gap-space-lg"><div class="rounded-lg bg-surface-white p-space-lg shadow-sm flex flex-col gap-space-md border border-outline-variant/30 relative overflow-hidden"><div class="absolute -right-8 -top-8 w-28 h-28 rounded-full bg-primary-light/50 blur-xl pointer-events-none"></div><div class="flex items-start justify-between gap-space-sm relative z-10"><div class="flex items-center gap-space-md"><div class="relative w-14 h-14 rounded-2xl bg-secondary-container text-on-secondary-container flex items-center justify-center font-extrabold text-xl shadow-xs ring-2 ring-primary-container/30"><span class="material-symbols-outlined text-3xl text-primary">account_circle</span><span class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-primary-container text-on-primary flex items-center justify-center text-[10px] ring-2 ring-surface-white"><span class="material-symbols-outlined text-xs">verified</span></span></div><div class="flex flex-col min-w-0"><div class="flex items-center gap-1.5"><h3 class="font-headline-sm text-headline-sm font-extrabold text-on-surface truncate">Aisha Nurhaliza</h3></div><span class="font-body-sm text-text-muted text-[12px]">Universitas Indonesia • Debater</span><div class="mt-1"><span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary-light text-primary font-label-sm text-[11px] font-extrabold"><span class="material-symbols-outlined text-xs">verified_user</span>NUDC Trainee</span></div></div></div><a href="#" data-path="profil" class="w-8 h-8 rounded-full bg-surface-subtle flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-primary-light transition-all shadow-xs" title="Buka Profil Penuh"><span class="material-symbols-outlined text-base">open_in_new</span></a></div><div class="flex flex-wrap gap-1.5 relative z-10"><span class="px-2.5 py-1 rounded-DEFAULT bg-surface-subtle text-on-surface font-label-sm text-label-sm font-bold flex items-center gap-1"><span class="material-symbols-outlined text-sm text-primary">record_voice_over</span>Leader of Opposition (LO)</span><span class="px-2.5 py-1 rounded-DEFAULT bg-surface-subtle text-secondary font-label-sm text-label-sm font-bold flex items-center gap-1"><span class="material-symbols-outlined text-sm text-secondary">gavel</span>British Parliamentary</span></div><div class="grid grid-cols-3 gap-2 p-space-sm rounded-DEFAULT bg-surface-subtle relative z-10"><div class="flex flex-col items-center justify-center p-1.5 bg-surface-white rounded-DEFAULT shadow-xs text-center"><span class="font-headline-sm text-headline-sm font-extrabold text-on-surface leading-tight">14</span><span class="font-label-sm text-[10px] font-bold text-text-muted uppercase tracking-wider">Pidato</span></div><div class="flex flex-col items-center justify-center p-1.5 bg-surface-white rounded-DEFAULT shadow-xs text-center"><span class="font-headline-sm text-headline-sm font-extrabold text-primary leading-tight">81</span><span class="font-label-sm text-[10px] font-bold text-text-muted uppercase tracking-wider">Skor Juri</span></div><div class="flex flex-col items-center justify-center p-1.5 bg-surface-white rounded-DEFAULT shadow-xs text-center"><span class="font-headline-sm text-headline-sm font-extrabold text-accent-orange leading-tight">5 Hari</span><span class="font-label-sm text-[10px] font-bold text-text-muted uppercase tracking-wider">Streak</span></div></div><div class="flex items-center justify-between pt-0.5 relative z-10 border-t border-outline-variant/30"><div class="flex items-center gap-1 text-[11px] font-bold text-text-muted"><span class="w-2 h-2 rounded-full bg-primary-container"></span><span class="">Solid Competitor Tier</span></div><a href="#" data-path="profil" class="inline-flex items-center gap-1 font-label-sm text-label-sm font-extrabold text-primary hover:text-on-primary-container transition-colors"><span class="">Kelola Profil &amp; Kuota</span><span class="material-symbols-outlined text-sm">arrow_forward</span></a></div></div>
+<!-- Card 1: Target & Kebiasaan Harian -->
+<div class="rounded-lg bg-surface-white p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-accent-orange text-2xl">local_fire_department</span>
+<h3 class="font-headline-sm text-headline-sm font-extrabold text-on-surface">Target &amp; Streak Harian</h3>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-accent-orange/15 text-accent-orange font-label-sm text-label-sm font-extrabold">
+            5 Hari Aktif
+          </span>
+</div>
+<!-- Daily Goal Progress -->
+<div class="p-space-md rounded-DEFAULT bg-surface-subtle flex flex-col gap-2">
+<div class="flex justify-between items-center text-label-md font-label-md">
+<span class="font-bold text-on-surface">Target Latihan Hari Ini</span>
+<span class="text-primary font-extrabold">1 / 2 Selesai (+25 XP)</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary-container rounded-full w-1/2 transition-all duration-500"></div>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted">Tuntaskan 1 sesi lagi sebelum 23:59 untuk menjaga rekor streak Anda.</p>
+</div>
+<!-- Weekly Streak Tracker (Sen - Min) -->
+<div class="flex flex-col gap-2 pt-1">
+<span class="font-label-sm text-label-sm uppercase font-extrabold tracking-wider text-text-muted">Pekan Ini (12 - 18 Mei)</span>
+<div class="grid grid-cols-7 gap-1.5 text-center">
+<!-- Sen (Active) -->
+<div class="flex flex-col items-center gap-1 p-2 rounded-DEFAULT bg-primary-light">
+<span class="font-label-sm text-label-sm font-bold text-text-muted">Sen</span>
+<span class="material-symbols-outlined text-accent-orange text-lg">local_fire_department</span>
+</div>
+<!-- Sel (Active) -->
+<div class="flex flex-col items-center gap-1 p-2 rounded-DEFAULT bg-primary-light">
+<span class="font-label-sm text-label-sm font-bold text-text-muted">Sel</span>
+<span class="material-symbols-outlined text-accent-orange text-lg">local_fire_department</span>
+</div>
+<!-- Rab (Active) -->
+<div class="flex flex-col items-center gap-1 p-2 rounded-DEFAULT bg-primary-light">
+<span class="font-label-sm text-label-sm font-bold text-text-muted">Rab</span>
+<span class="material-symbols-outlined text-accent-orange text-lg">local_fire_department</span>
+</div>
+<!-- Kam (Active) -->
+<div class="flex flex-col items-center gap-1 p-2 rounded-DEFAULT bg-primary-light">
+<span class="font-label-sm text-label-sm font-bold text-text-muted">Kam</span>
+<span class="material-symbols-outlined text-accent-orange text-lg">local_fire_department</span>
+</div>
+<!-- Jum (Active Today) -->
+<div class="flex flex-col items-center gap-1 p-2 rounded-DEFAULT bg-primary-container text-on-primary shadow-xs">
+<span class="font-label-sm text-label-sm font-extrabold text-on-primary">Jum</span>
+<span class="material-symbols-outlined text-on-primary text-lg">check_circle</span>
+</div>
+<!-- Sab (Upcoming) -->
+<div class="flex flex-col items-center gap-1 p-2 rounded-DEFAULT bg-surface-subtle">
+<span class="font-label-sm text-label-sm font-bold text-text-muted">Sab</span>
+<span class="w-4 h-4 rounded-full border-2 border-outline-variant mt-1"></span>
+</div>
+<!-- Min (Upcoming) -->
+<div class="flex flex-col items-center gap-1 p-2 rounded-DEFAULT bg-surface-subtle">
+<span class="font-label-sm text-label-sm font-bold text-text-muted">Min</span>
+<span class="w-4 h-4 rounded-full border-2 border-outline-variant mt-1"></span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 2: Rekomendasi Latihan Personal AI -->
+<div class="rounded-lg bg-surface-white p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-accent-purple/15 text-accent-purple flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">psychology</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-extrabold text-on-surface">Analisis Coach Kiko</h3>
+<p class="font-body-sm text-body-sm text-text-muted">Berdasarkan rekaman sesi kemarin</p>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Issue 1 -->
+<div class="p-space-sm rounded-DEFAULT bg-surface-subtle flex items-start gap-3">
+<span class="material-symbols-outlined text-accent-orange text-xl mt-0.5">priority_high</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Comparative Weighing Lemah</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Klaim belum membandingkan dampak terhadap kelompok rentan.</p>
+</div>
+</div>
+<!-- Issue 2 -->
+<div class="p-space-sm rounded-DEFAULT bg-surface-subtle flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-xl mt-0.5">volume_up</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Filler Words Terdeteksi: 14x</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Dominasi jeda "ee...", "anu", dan "apa namanya".</p>
+</div>
+</div>
+</div>
+<button class="w-full py-3 rounded-DEFAULT bg-primary-container text-on-primary font-label-md text-label-md font-extrabold shadow-sm border-b-4 border-on-primary-container active:translate-y-1 active:border-b-0 transition-all flex items-center justify-center gap-2 cursor-pointer" type="button">
+<span class="material-symbols-outlined text-lg">mic</span>
+<span class="">Mulai Drill 2 Menit (Pembersihan Filler)</span>
+</button>
+</div>
+<!-- Card 3: Status Kuota Bulan Ini -->
+<div class="rounded-lg bg-surface-white p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm font-extrabold text-on-surface">Kuota Latihan Bulan Ini</h3>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">Paket Pelajar</span>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Metric 1: Sesi Pidato 7 Menit -->
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface font-semibold">Simulasi Pidato BP (7-Menit)</span>
+<span class="font-bold text-on-surface">6 / 10 Sesi</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary rounded-full w-[60%]"></div>
+</div>
+</div>
+<!-- Metric 2: Tanya Coach Kiko -->
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface font-semibold">Konsultasi AI Coach Kiko</span>
+<span class="font-bold text-on-surface">45 / 50 Prompt</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-accent-orange rounded-full w-[90%]"></div>
+</div>
+</div>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-text-muted">Reset pada 1 Juni 2025</span>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-subtle hover:bg-surface-container font-label-sm text-label-sm font-bold text-primary transition-colors flex items-center gap-1 cursor-pointer" type="button">
+<span class="material-symbols-outlined text-base">add_circle</span>
+<span class="">Top-Up Kuota</span>
+</button>
+</div>
+</div>
+<!-- Card 4: Komunitas & Info Turnamen BP -->
+<div class="rounded-lg bg-surface-white p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-accent-purple text-2xl">event</span>
+<h3 class="font-headline-sm text-headline-sm font-extrabold text-on-surface">Simulasi &amp; Turnamen</h3>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-primary-light text-primary font-label-sm text-label-sm font-bold">Weekend</span>
+</div>
+<div class="relative rounded-DEFAULT overflow-hidden p-space-md bg-surface-subtle flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase font-extrabold text-secondary tracking-wide">Sabtu, 14:00 WIB</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-white font-label-sm text-label-sm text-on-surface font-bold shadow-xs">Room #04 Open</span>
+</div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface">
+            BP Sparring Round: THBT Green Energy Transition Subsidies
+          </h4>
+<p class="font-body-sm text-body-sm text-text-muted line-clamp-2">
+            Format 4-tim dengan live adjudication dari AI Coach Kiko dan senior debater ITB/UI.
+          </p>
+<div class="flex items-center justify-between pt-1">
+<div class="flex -space-x-2 overflow-hidden">
+<div class="inline-block h-6 w-6 rounded-full bg-primary-container text-on-primary text-[10px] flex items-center justify-center font-bold ring-2 ring-surface-white">AN</div>
+<div class="inline-block h-6 w-6 rounded-full bg-accent-orange text-on-primary text-[10px] flex items-center justify-center font-bold ring-2 ring-surface-white">RS</div>
+<div class="inline-block h-6 w-6 rounded-full bg-accent-purple text-on-primary text-[10px] flex items-center justify-center font-bold ring-2 ring-surface-white">+6</div>
+</div>
+<button class="px-3 py-1.5 rounded-full bg-surface-white hover:bg-primary-light text-primary font-label-md text-label-md font-extrabold transition-all shadow-xs cursor-pointer" type="button">
+              Daftar Sparring
+            </button>
+</div>
+</div>
+<a class="inline-flex items-center justify-center gap-1 font-label-md text-label-md font-bold text-secondary hover:text-primary transition-colors pt-1" href="#">
+<span class="">Lihat Jadwal Lengkap Kompetisi</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div></main></div>
+
+</body></html>

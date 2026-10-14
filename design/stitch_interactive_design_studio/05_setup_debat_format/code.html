@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Nunito+Sans:wght@700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "secondary-container": "#b7eede", "surface-container-high": "#d4eee3", "surface-container-lowest": "#ffffff", "secondary-fixed": "#b7eede", "secondary": "#33675b", "surface-white": "#FFFFFF", "error-container": "#ffdad6", "accent-orange": "#FFB14A", "inverse-on-surface": "#ddf7ec", "primary-fixed": "#74fbb7", "on-secondary-fixed": "#00201a", "outline": "#6d7a70", "background-cream": "#F9FAF3", "on-tertiary-container": "#2f3e00", "border-clean": "#DDE7DE", "primary-fixed-dim": "#55de9c", "primary-container": "#20b87a", "on-primary-container": "#004128", "surface-bright": "#e6fff4", "on-tertiary": "#ffffff", "on-secondary-fixed-variant": "#184f44", "secondary-fixed-dim": "#9bd1c3", "tertiary-container": "#92ac4a", "text-muted": "#6C7973", "on-primary-fixed": "#002112", "on-primary": "#ffffff", "on-tertiary-fixed-variant": "#3b4d00", "on-secondary-container": "#3a6d61", "tertiary": "#506606", "surface-container-low": "#e0f9ee", "inverse-primary": "#55de9c", "tertiary-fixed-dim": "#b6d16b", "accent-coral": "#EF6D6D", "surface-container": "#daf4e9", "on-error-container": "#93000a", "tertiary-fixed": "#d2ee84", "surface-dim": "#c6e0d5", "on-secondary": "#ffffff", "accent-purple": "#8668E8", "surface-subtle": "#F1F4EC", "outline-variant": "#bccabe", "on-surface": "#091f19", "surface-variant": "#cfe8de", "on-surface-variant": "#3d4a41", "on-background": "#091f19", "on-primary-fixed-variant": "#005233", "background": "#e6fff4", "primary": "#006c45", "surface-tint": "#006c45", "on-error": "#ffffff", "error": "#ba1a1a", "surface-container-highest": "#cfe8de", "primary-light": "#E8F8F1", "inverse-surface": "#1f352e", "on-tertiary-fixed": "#161f00", "surface": "#e6fff4" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "space-2xl": "3rem", "space-md": "1rem", "space-xs": "0.25rem", "gutter-desktop": "1.5rem", "space-xl": "2rem", "margin-tablet": "1.5rem", "margin-desktop": "2.5rem", "margin": "1rem", "gutter": "1rem", "space-sm": "0.5rem", "space-lg": "1.5rem" }, fontFamily: { "label-lg": ["Inter"], "headline-xl": ["Nunito Sans"], "headline-lg-mobile": ["Nunito Sans"], "body-lg": ["Inter"], "headline-lg": ["Nunito Sans"], "headline-md": ["Nunito Sans"], "body-md": ["Inter"], "headline-sm": ["Nunito Sans"], "label-md": ["Inter"], "body-sm": ["Inter"], "headline-xl-mobile": ["Nunito Sans"], "metric-display": ["Nunito Sans"], "label-sm": ["Inter"] }, fontSize: { "label-lg": ["15px", { lineHeight: "20px", fontWeight: "600" }], "headline-xl": ["36px", { lineHeight: "44px", fontWeight: "800" }], "headline-lg-mobile": ["24px", { lineHeight: "32px", fontWeight: "700" }], "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }], "headline-lg": ["28px", { lineHeight: "36px", fontWeight: "800" }], "headline-md": ["22px", { lineHeight: "28px", fontWeight: "700" }], "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }], "headline-sm": ["18px", { lineHeight: "24px", fontWeight: "700" }], "label-md": ["13px", { lineHeight: "18px", fontWeight: "600" }], "body-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }], "headline-xl-mobile": ["28px", { lineHeight: "36px", fontWeight: "800" }], "metric-display": ["32px", { lineHeight: "36px", fontWeight: "900" }], "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.5px", fontWeight: "700" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-background-cream font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-background-cream/85 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(23,78,67,0.05)]"><div class="h-16 px-4 flex items-center justify-between gap-2 overflow-x-auto no-scrollbar"><div class="flex items-center gap-2 flex-shrink-0"><img alt="Argumenta Mascot Kiko Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1U3kZSZmeMe6DKSAYCI-lT8i34Oj0p7-dOLo148uwXerbtyLYCP5Dqc7_QDH_mxmDEhCLJ_hvI5JKr_m-9a1W8AryVLhCu3rH7YYzurki-dPIJMcqOfNde9f_60QSEK9iw9SLBheGFfUC5j4f-dwMsUghySHLpmedOKEqqvLO7fsSFjwN5BlW20CWoVkP_BGEuiZU3GsymKTrzER3a4N8DctGvjgT29h35Ze8aw5xiklMAfallYDFYQuUA"/><span class="font-headline-sm text-headline-sm text-on-secondary-fixed-variant tracking-tight">Argumenta</span><span class="hidden sm:inline-flex px-2 py-0.5 rounded-full bg-accent-purple/15 text-accent-purple font-label-sm text-label-sm font-bold uppercase tracking-wide">BP Debate</span></div><div class="flex items-center gap-2 flex-shrink-0"><div class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-accent-orange/15 text-on-surface font-label-sm text-label-sm font-bold"><span class="text-xs">🔥</span><span>5</span></div><div class="hidden xs:flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary-container/15 text-on-primary-container font-label-sm text-label-sm font-bold"><span class="text-xs">⚡</span><span>420 XP</span></div><div class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-subtle text-on-secondary-fixed-variant font-label-sm text-label-sm font-bold"><span class="text-xs">🎙️</span><span>12 Sesi</span></div><div class="w-8 h-8 rounded-full overflow-hidden flex-shrink-0 shadow-sm ring-1 ring-border-clean"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTfI-fCjeBejrjJMU-fif5Jga73maQfSzZa_MsG917aaGekWPsK6eAaTnHDHRZng0xYWIbh8c6C_9D2E0nl6cILUU3I0fhGAGfDpDZk_SxFnZvGXO5dPZ3PIjqAXQLS9FULNyi9imUb5r0kxp5BtnKdEIrmta1_jGuuXz6JqfubjeY5Fs0nMqMXI_lWx3Gp9r6ngby-kpmYVUJiQ_fdyYk5jygAi6HUJAeMlVv1bzYb9mGQUJM4Fbk"/></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-background-cream"><div class="flex flex-col w-full px-4 pt-2 pb-6 max-w-lg mx-auto">
+<!-- Progress Stepper Tracker -->
+<div class="flex flex-col gap-2 mb-5">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-light text-primary font-label-sm text-label-sm uppercase tracking-wider font-bold">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+        Langkah 1 dari 4
+      </span>
+<span class="text-text-muted font-label-sm text-label-sm font-semibold">25% Selesai</span>
+</div>
+<div class="w-full h-2.5 bg-surface-subtle rounded-full overflow-hidden p-0.5 shadow-inner">
+<div class="h-full bg-primary-container rounded-full transition-all duration-500 ease-out" style="width: 25%"></div>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight mt-1">Konfigurasi Sesi Pidato</h2>
+<p class="font-body-sm text-body-sm text-text-muted">Tentukan aturan main, posisi kursi podium, dan mosi latihan tandingmu hari ini.</p>
+</div>
+<!-- SECTION 1: Format Debat -->
+<div class="flex flex-col gap-3 mb-6">
+<div class="flex items-center justify-between">
+<label class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-2">
+<span class="flex items-center justify-center w-6 h-6 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-bold">1</span>
+        Format Debat
+      </label>
+<span class="font-label-sm text-label-sm text-primary font-bold bg-primary-light px-2 py-0.5 rounded-full">Standar WUDC</span>
+</div>
+<div class="grid grid-cols-2 gap-2.5" id="format-grid">
+<!-- BP (Active) -->
+<button class="format-card flex flex-col p-3.5 rounded-2xl bg-primary-light text-left transition-all duration-150 relative shadow-sm" data-format="bp" type="button">
+<div class="flex items-start justify-between w-full mb-2">
+<div class="w-9 h-9 rounded-xl bg-primary-container text-surface-white flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[20px]">account_balance</span>
+</div>
+<span class="material-symbols-outlined text-primary text-[22px] format-check" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-primary-container font-bold leading-tight">British Parl.</span>
+<span class="font-body-sm text-body-sm text-secondary mt-0.5">4 Tim, 8 Pembicara (BP)</span>
+</button>
+<!-- AP -->
+<button class="format-card flex flex-col p-3.5 rounded-2xl bg-surface-white text-left transition-all duration-150 relative shadow-sm" data-format="ap" type="button">
+<div class="flex items-start justify-between w-full mb-2">
+<div class="w-9 h-9 rounded-xl bg-surface-subtle text-text-muted flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">groups_3</span>
+</div>
+<span class="material-symbols-outlined text-surface-subtle text-[22px] format-check">radio_button_unchecked</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight">Asian Parl.</span>
+<span class="font-body-sm text-body-sm text-text-muted mt-0.5">3 vs 3 + Reply Speech</span>
+</button>
+<!-- Australs -->
+<button class="format-card flex flex-col p-3.5 rounded-2xl bg-surface-white text-left transition-all duration-150 relative shadow-sm" data-format="australs" type="button">
+<div class="flex items-start justify-between w-full mb-2">
+<div class="w-9 h-9 rounded-xl bg-surface-subtle text-text-muted flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">public</span>
+</div>
+<span class="material-symbols-outlined text-surface-subtle text-[22px] format-check">radio_button_unchecked</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight">Australs</span>
+<span class="font-body-sm text-body-sm text-text-muted mt-0.5">Tradisional tanpa POI</span>
+</button>
+<!-- MUN -->
+<button class="format-card flex flex-col p-3.5 rounded-2xl bg-surface-white text-left transition-all duration-150 relative shadow-sm" data-format="mun" type="button">
+<div class="flex items-start justify-between w-full mb-2">
+<div class="w-9 h-9 rounded-xl bg-surface-subtle text-text-muted flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">gavel</span>
+</div>
+<span class="material-symbols-outlined text-surface-subtle text-[22px] format-check">radio_button_unchecked</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight">Model UN</span>
+<span class="font-body-sm text-body-sm text-text-muted mt-0.5">Diplomasi Dewan PBB</span>
+</button>
+</div>
+</div>
+<!-- SECTION 2: Posisi / Kursi BP Debate -->
+<div class="flex flex-col gap-3 mb-6">
+<div class="flex items-center justify-between">
+<label class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-2">
+<span class="flex items-center justify-center w-6 h-6 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-bold">2</span>
+        Posisi Debat (BP Grid)
+      </label>
+<span class="font-label-sm text-label-sm text-text-muted">Pilih 1 Peran Podium</span>
+</div>
+<!-- BP Houses Diagram Selector -->
+<div class="flex flex-col gap-2.5 p-3 rounded-2xl bg-surface-white shadow-sm">
+<div class="flex items-center justify-between px-1">
+<span class="font-label-sm text-label-sm font-bold text-primary uppercase tracking-wider flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary"></span> Opening Half
+        </span>
+<span class="font-label-sm text-label-sm text-text-muted">Sesi 1</span>
+</div>
+<div class="grid grid-cols-2 gap-2" id="roles-container">
+<!-- PM -->
+<button class="role-pill flex items-center justify-between px-3 py-2.5 rounded-xl bg-surface-subtle text-on-surface font-label-md text-label-md transition-all active:scale-95" data-role="PM" type="button">
+<div class="flex items-center gap-2">
+<span class="font-bold text-primary">OG</span>
+<span class="font-medium">Prime Minister (PM)</span>
+</div>
+</button>
+<!-- LO (Active) -->
+<button class="role-pill flex items-center justify-between px-3 py-2.5 rounded-xl bg-primary-container text-surface-white font-label-md text-label-md shadow-sm transition-all active:scale-95" data-role="LO" type="button">
+<div class="flex items-center gap-2">
+<span class="font-bold text-primary-light">OO</span>
+<span class="font-bold">Leader of Opp. (LO)</span>
+</div>
+<span class="material-symbols-outlined text-[18px]">check</span>
+</button>
+<!-- DPM -->
+<button class="role-pill flex items-center justify-between px-3 py-2.5 rounded-xl bg-surface-subtle text-on-surface font-label-md text-label-md transition-all active:scale-95" data-role="DPM" type="button">
+<div class="flex items-center gap-2">
+<span class="font-bold text-primary">OG</span>
+<span class="font-medium">Deputy PM (DPM)</span>
+</div>
+</button>
+<!-- DLO -->
+<button class="role-pill flex items-center justify-between px-3 py-2.5 rounded-xl bg-surface-subtle text-on-surface font-label-md text-label-md transition-all active:scale-95" data-role="DLO" type="button">
+<div class="flex items-center gap-2">
+<span class="font-bold text-text-muted">OO</span>
+<span class="font-medium">Deputy LO (DLO)</span>
+</div>
+</button>
+</div>
+<div class="flex items-center justify-between px-1 mt-1">
+<span class="font-label-sm text-label-sm font-bold text-accent-purple uppercase tracking-wider flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-accent-purple"></span> Closing Half
+        </span>
+<span class="font-label-sm text-label-sm text-text-muted">Sesi 2</span>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<!-- MG -->
+<button class="role-pill flex items-center justify-between px-3 py-2.5 rounded-xl bg-surface-subtle text-on-surface font-label-md text-label-md transition-all active:scale-95" data-role="MG" type="button">
+<div class="flex items-center gap-2">
+<span class="font-bold text-accent-purple">CG</span>
+<span class="font-medium">Member Govt (MG)</span>
+</div>
+</button>
+<!-- MO -->
+<button class="role-pill flex items-center justify-between px-3 py-2.5 rounded-xl bg-surface-subtle text-on-surface font-label-md text-label-md transition-all active:scale-95" data-role="MO" type="button">
+<div class="flex items-center gap-2">
+<span class="font-bold text-text-muted">CO</span>
+<span class="font-medium">Member Opp. (MO)</span>
+</div>
+</button>
+<!-- GW -->
+<button class="role-pill flex items-center justify-between px-3 py-2.5 rounded-xl bg-surface-subtle text-on-surface font-label-md text-label-md transition-all active:scale-95" data-role="GW" type="button">
+<div class="flex items-center gap-2">
+<span class="font-bold text-accent-purple">CG</span>
+<span class="font-medium">Govt Whip (GW)</span>
+</div>
+</button>
+<!-- OW -->
+<button class="role-pill flex items-center justify-between px-3 py-2.5 rounded-xl bg-surface-subtle text-on-surface font-label-md text-label-md transition-all active:scale-95" data-role="OW" type="button">
+<div class="flex items-center gap-2">
+<span class="font-bold text-text-muted">CO</span>
+<span class="font-medium">Opp. Whip (OW)</span>
+</div>
+</button>
+</div>
+</div>
+</div>
+<!-- SECTION 3: Role Briefing Alert Card with Mascot -->
+<div class="flex items-start gap-3 p-4 rounded-2xl bg-secondary-container text-on-secondary-fixed mb-6 shadow-sm relative overflow-hidden" id="role-brief-card">
+<div class="w-12 h-12 rounded-2xl bg-surface-white flex-shrink-0 flex items-center justify-center shadow-sm overflow-hidden p-1">
+<img class="w-full h-full object-contain" data-alt="Playful cheerful green owl or debate bird mascot named Kiko wearing academic glasses and speaking into a vintage golden microphone with sparkling speech bubbles around it in modern 3D vector illustration style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZlG-38GZ791AdEWheSfv0MB-JsyJ0rt-M9Yda8XPX8m1gH3XCqRwzmtzoAPBpe1a0eQK412fzYMuRwYBFDlhLsRTH7fGajTHkQED6mHeyb99c3UnkZWEYML4gxeq8ILlUJuyDl6JPM0cjg5SEEvlZZeNdMRCosQnous6_oTCq2Y53s6hJWjO4pohINsOsuYMyX8o3rEd7PblZaeNBCBqkpfUJOQ8BPhGb7dV6oKC60yDVlgZAKV9h"/>
+</div>
+<div class="flex flex-col min-w-0 pr-1">
+<div class="flex items-center gap-1.5 mb-1">
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wide bg-primary text-surface-white px-2 py-0.5 rounded-md">Instruksi Coach</span>
+<span class="font-headline-sm text-headline-sm text-on-secondary-fixed" id="brief-role-title">Peran LO</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-secondary-fixed font-medium leading-relaxed" id="brief-role-desc">
+        Bantah kasus pembuka Prime Minister, bangun alternatif status-quo oposisi, dan tetapkan clash utama perdebatan di babak opening half.
+      </p>
+</div>
+</div>
+<!-- SECTION 4: Mosi Debat Card -->
+<div class="flex flex-col gap-3 mb-6">
+<div class="flex items-center justify-between">
+<label class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-2">
+<span class="flex items-center justify-center w-6 h-6 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-bold">3</span>
+        Mosi Debat
+      </label>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-surface-white text-primary font-label-sm text-label-sm font-bold shadow-sm active:scale-95 transition-all" id="randomize-motion-btn" type="button">
+<span class="material-symbols-outlined text-[16px] transition-transform duration-300" id="refresh-icon">autorenew</span>
+        Ganti Acak
+      </button>
+</div>
+<div class="p-4 rounded-2xl bg-surface-white shadow-sm flex flex-col gap-3 relative overflow-hidden">
+<!-- Motion categories badge strip -->
+<div class="flex flex-wrap items-center gap-1.5">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-accent-purple/15 text-accent-purple font-label-sm text-label-sm font-bold" id="motion-category">
+<span class="material-symbols-outlined text-[14px]">eco</span>
+          Lingkungan &amp; Ekonomi
+        </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-accent-orange/20 text-on-surface font-label-sm text-label-sm font-bold" id="motion-difficulty">
+<span class="material-symbols-outlined text-[14px]">speed</span>
+          Menengah
+        </span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-subtle text-text-muted font-label-sm text-label-sm">
+          THBT
+        </span>
+</div>
+<!-- Motion Quote Box -->
+<div class="p-3.5 rounded-xl bg-background-cream">
+<p class="font-headline-sm text-headline-sm text-on-surface font-bold leading-snug" id="motion-text">
+          “Dewan ini percaya bahwa negara berkembang harus memprioritaskan industrialisasi hijau daripada pertumbuhan ekonomi jangka pendek.”
+        </p>
+</div>
+<!-- Motion Context Snippet -->
+<div class="flex items-center justify-between pt-1 text-text-muted font-body-sm text-body-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">info</span>
+          Format: This House Believes That
+        </span>
+<span class="text-primary font-label-sm text-label-sm font-bold cursor-pointer hover:underline">Pelajari Info Slide</span>
+</div>
+</div>
+</div>
+<!-- SECTION 5: Bahasa & Durasi -->
+<div class="flex flex-col gap-3 mb-6">
+<div class="flex items-center justify-between">
+<label class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-2">
+<span class="flex items-center justify-center w-6 h-6 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-bold">4</span>
+        Bahasa &amp; Durasi Latihan
+      </label>
+<span class="font-label-sm text-label-sm text-accent-orange font-bold flex items-center gap-0.5">
+<span>⭐</span> +50 XP Bonus
+      </span>
+</div>
+<div class="grid grid-cols-1 gap-3">
+<!-- Language Selection -->
+<div class="p-3.5 rounded-2xl bg-surface-white shadow-sm flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-text-muted uppercase tracking-wider font-bold">Bahasa Penyampaian (Speech Language)</span>
+<div class="grid grid-cols-2 gap-2" id="language-toggle">
+<button class="lang-opt py-2.5 px-3 rounded-xl bg-surface-subtle text-text-muted font-label-md text-label-md font-semibold text-center transition-all" data-lang="id" type="button">
+            Bahasa Indonesia
+          </button>
+<button class="lang-opt py-2.5 px-3 rounded-xl bg-primary-container text-surface-white font-label-md text-label-md font-bold text-center shadow-sm relative transition-all" data-lang="en" type="button">
+<span>English (WUDC)</span>
+<span class="absolute -top-1.5 -right-1 px-1.5 py-0.2 rounded-full bg-accent-orange text-on-surface text-[9px] font-bold shadow-xs">REKOMENDASI</span>
+</button>
+</div>
+</div>
+<!-- Duration Selection -->
+<div class="p-3.5 rounded-2xl bg-surface-white shadow-sm flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-text-muted uppercase tracking-wider font-bold">Durasi Pidato Debat</span>
+<div class="grid grid-cols-2 gap-2" id="duration-toggle">
+<!-- Full -->
+<button class="dur-opt p-3 rounded-xl bg-primary-light text-on-primary-container font-label-md text-label-md flex flex-col text-left transition-all shadow-xs" data-dur="7" type="button">
+<div class="flex items-center justify-between w-full mb-1">
+<span class="font-bold text-headline-sm font-headline-sm text-primary">07:00</span>
+<span class="material-symbols-outlined text-primary text-[18px]">timer</span>
+</div>
+<span class="font-bold text-on-surface leading-tight">7 Menit Penuh</span>
+<span class="font-body-sm text-body-sm text-text-muted text-[11px]">Standar Resmi + Bell POI</span>
+</button>
+<!-- Drill -->
+<button class="dur-opt p-3 rounded-xl bg-surface-subtle text-text-muted font-label-md text-label-md flex flex-col text-left transition-all" data-dur="3" type="button">
+<div class="flex items-center justify-between w-full mb-1">
+<span class="font-bold text-headline-sm font-headline-sm text-on-surface">03:00</span>
+<span class="material-symbols-outlined text-text-muted text-[18px]">bolt</span>
+</div>
+<span class="font-bold text-on-surface leading-tight">3 Menit Ringkas</span>
+<span class="font-body-sm text-body-sm text-text-muted text-[11px]">Fast Rebuttal Drill</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- STICKY BOTTOM TACTILE CTA BAR -->
+<div class="sticky bottom-20 inset-x-0 z-30 pt-2 pb-1">
+<div class="p-3 rounded-2xl bg-surface-white/95 backdrop-blur-md shadow-lg flex flex-col gap-2">
+<div class="flex items-center justify-between px-1">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-text-muted">
+<span class="material-symbols-outlined text-[16px] text-primary">mic</span>
+<span>Sesi: <b class="text-on-surface font-bold" id="cta-summary-pill">BP • LO • 7 Min • EN</b></span>
+</div>
+<span class="font-label-sm text-label-sm text-accent-orange font-bold">+120 XP</span>
+</div>
+<!-- Tactile 3D Push Button -->
+<button class="w-full py-3.5 px-6 rounded-2xl bg-primary-container text-surface-white font-headline-sm text-headline-sm font-bold flex items-center justify-center gap-2 shadow-md transition-all duration-150 transform active:translate-y-1 active:shadow-none hover:bg-primary" id="proceed-button" type="button">
+<span>Lanjut ke Persiapan Pidato</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    // Motions Database for Randomizer
+    const motions = [
+      {
+        text: 'Dewan ini percaya bahwa negara berkembang harus memprioritaskan industrialisasi hijau daripada pertumbuhan ekonomi jangka pendek.',
+        cat: 'Lingkungan & Ekonomi',
+        icon: 'eco',
+        diff: 'Menengah'
+      },
+      {
+        text: 'Dewan ini akan melarang penggunaan model AI generatif komersial dalam proses peradilan dan putusan hukum.',
+        cat: 'Teknologi & Etika',
+        icon: 'smart_toy',
+        diff: 'Tinggi'
+      },
+      {
+        text: 'Dewan ini mendukung sistem gaji tanpa batas untuk pekerja di sektor pelayanan sosial dan keperawatan.',
+        cat: 'Kebijakan Publik',
+        icon: 'health_and_safety',
+        diff: 'Pemula'
+      },
+      {
+        text: 'Sebagai negara adidaya, Dewan ini akan menolak memberikan bantuan keuangan bagi negara yang membatasi kebebasan pers.',
+        cat: 'Hubungan Internasional',
+        icon: 'language',
+        diff: 'Tinggi'
+      }
+    ];
+
+    const roleBriefs = {
+      'PM': 'Buka perdebatan, berikan konteks definisi model kebijakan, dan bangun argumen utama pendukung mosi.',
+      'LO': 'Bantah kasus pembuka Prime Minister, bangun alternatif status-quo oposisi, dan tetapkan clash utama perdebatan.',
+      'DPM': 'Perkuat argumen PM, respons sanggahan LO secara taktis, dan bawa komparasi dampak positif pemerintah.',
+      'DLO': 'Bantah sanggahan DPM, pertahankan kasus LO, dan simpulkan keunggulan pembukaan oposisi (Closing the Opening).',
+      'MG': 'Bawa extension argument substantif baru yang tidak disentuh Opening Government namun krusial memenangkan mosi.',
+      'MO': 'Bawa extension bantahan mendalam dan analisis unik yang melucuti skenario terbaik sisi pendukung.',
+      'GW': 'Sintesis clash utama debat tanpa membawa materi baru; buktikan mengapa CG adalah tim paling berdampak di ruangan.',
+      'OW': 'Tutup perdebatan secara komprehensif; timbang clash utama dan buktikan kemenangan CO atas 3 tim lainnya.'
+    };
+
+    let selectedRole = 'LO';
+    let selectedFormat = 'bp';
+    let selectedLang = 'en';
+    let selectedDur = '7';
+
+    function updateCtaSummary() {
+      const summaryEl = document.getElementById('cta-summary-pill');
+      if (summaryEl) {
+        summaryEl.textContent = `${selectedFormat.toUpperCase()} • ${selectedRole} • ${selectedDur} Min • ${selectedLang.toUpperCase()}`;
+      }
+    }
+
+    // Role Selection
+    const roleButtons = document.querySelectorAll('.role-pill');
+    roleButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const role = btn.getAttribute('data-role');
+        selectedRole = role;
+
+        roleButtons.forEach(b => {
+          b.className = 'role-pill flex items-center justify-between px-3 py-2.5 rounded-xl bg-surface-subtle text-on-surface font-label-md text-label-md transition-all active:scale-95';
+          const chk = b.querySelector('.material-symbols-outlined');
+          if (chk) chk.remove();
+        });
+
+        btn.className = 'role-pill flex items-center justify-between px-3 py-2.5 rounded-xl bg-primary-container text-surface-white font-label-md text-label-md shadow-sm transition-all active:scale-95';
+        const checkIcon = document.createElement('span');
+        checkIcon.className = 'material-symbols-outlined text-[18px]';
+        checkIcon.textContent = 'check';
+        btn.appendChild(checkIcon);
+
+        // Update Briefing
+        const titleEl = document.getElementById('brief-role-title');
+        const descEl = document.getElementById('brief-role-desc');
+        if (titleEl && descEl && roleBriefs[role]) {
+          titleEl.textContent = `Peran ${role}`;
+          descEl.textContent = roleBriefs[role];
+        }
+
+        updateCtaSummary();
+      });
+    });
+
+    // Format Selector
+    const formatCards = document.querySelectorAll('.format-card');
+    formatCards.forEach(card => {
+      card.addEventListener('click', () => {
+        const fmt = card.getAttribute('data-format');
+        selectedFormat = fmt;
+
+        formatCards.forEach(c => {
+          c.classList.remove('bg-primary-light');
+          c.classList.add('bg-surface-white');
+          const chk = c.querySelector('.format-check');
+          if (chk) {
+            chk.textContent = 'radio_button_unchecked';
+            chk.className = 'material-symbols-outlined text-surface-subtle text-[22px] format-check';
+          }
+        });
+
+        card.classList.remove('bg-surface-white');
+        card.classList.add('bg-primary-light');
+        const activeChk = card.querySelector('.format-check');
+        if (activeChk) {
+          activeChk.textContent = 'check_circle';
+          activeChk.className = 'material-symbols-outlined text-primary text-[22px] format-check';
+          activeChk.style.fontVariationSettings = "'FILL' 1";
+        }
+
+        updateCtaSummary();
+      });
+    });
+
+    // Language Toggle
+    const langButtons = document.querySelectorAll('.lang-opt');
+    langButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        selectedLang = btn.getAttribute('data-lang');
+        langButtons.forEach(b => {
+          b.className = 'lang-opt py-2.5 px-3 rounded-xl bg-surface-subtle text-text-muted font-label-md text-label-md font-semibold text-center transition-all';
+        });
+        btn.className = 'lang-opt py-2.5 px-3 rounded-xl bg-primary-container text-surface-white font-label-md text-label-md font-bold text-center shadow-sm relative transition-all';
+        updateCtaSummary();
+      });
+    });
+
+    // Duration Toggle
+    const durButtons = document.querySelectorAll('.dur-opt');
+    durButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        selectedDur = btn.getAttribute('data-dur');
+        durButtons.forEach(b => {
+          b.className = 'dur-opt p-3 rounded-xl bg-surface-subtle text-text-muted font-label-md text-label-md flex flex-col text-left transition-all';
+        });
+        btn.className = 'dur-opt p-3 rounded-xl bg-primary-light text-on-primary-container font-label-md text-label-md flex flex-col text-left transition-all shadow-xs';
+        updateCtaSummary();
+      });
+    });
+
+    // Motion Randomizer Button
+    const randomBtn = document.getElementById('randomize-motion-btn');
+    const refreshIcon = document.getElementById('refresh-icon');
+    let currentMotionIndex = 0;
+
+    if (randomBtn) {
+      randomBtn.addEventListener('click', () => {
+        if (refreshIcon) refreshIcon.classList.add('rotate-180');
+        setTimeout(() => {
+          if (refreshIcon) refreshIcon.classList.remove('rotate-180');
+        }, 300);
+
+        currentMotionIndex = (currentMotionIndex + 1) % motions.length;
+        const cur = motions[currentMotionIndex];
+
+        const textEl = document.getElementById('motion-text');
+        const catEl = document.getElementById('motion-category');
+        const diffEl = document.getElementById('motion-difficulty');
+
+        if (textEl) textEl.textContent = `“${cur.text}”`;
+        if (catEl) {
+          catEl.innerHTML = `<span class="material-symbols-outlined text-[14px]">${cur.icon}</span>${cur.cat}`;
+        }
+        if (diffEl) {
+          diffEl.innerHTML = `<span class="material-symbols-outlined text-[14px]">speed</span>${cur.diff}`;
+        }
+      });
+    }
+
+    // CTA Push action
+    const proceedBtn = document.getElementById('proceed-button');
+    if (proceedBtn) {
+      proceedBtn.addEventListener('click', () => {
+        proceedBtn.classList.add('scale-95');
+        setTimeout(() => {
+          proceedBtn.classList.remove('scale-95');
+        }, 150);
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-white/90 backdrop-blur-xl shadow-[0_-4px_16px_rgba(23,78,67,0.06)]" data-active-classes="bg-primary-light text-primary-container font-label-md"><div class="flex justify-around items-center h-20 px-2 max-w-lg mx-auto"><a class="flex flex-col items-center justify-center gap-1 w-16 h-14 rounded-2xl text-text-muted hover:text-on-surface transition-all duration-200" data-path="beranda" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm">Beranda</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-1 w-16 h-14 rounded-2xl transition-all duration-200 bg-primary-light text-primary-container font-label-md" data-path="latihan" href="#"><span class="material-symbols-outlined text-[24px]">mic</span><span class="font-label-sm text-label-sm">Latihan</span></a><a class="flex flex-col items-center justify-center gap-1 w-16 h-14 rounded-2xl text-text-muted hover:text-on-surface transition-all duration-200" data-path="coach" href="#"><span class="material-symbols-outlined text-[24px]">smart_toy</span><span class="font-label-sm text-label-sm">Coach</span></a><a class="flex flex-col items-center justify-center gap-1 w-16 h-14 rounded-2xl text-text-muted hover:text-on-surface transition-all duration-200" data-path="progres" href="#"><span class="material-symbols-outlined text-[24px]">insights</span><span class="font-label-sm text-label-sm">Progres</span></a><a class="flex flex-col items-center justify-center gap-1 w-16 h-14 rounded-2xl text-text-muted hover:text-on-surface transition-all duration-200" data-path="profil" href="#"><span class="material-symbols-outlined text-[24px]">account_circle</span><span class="font-label-sm text-label-sm">Profil</span></a></div></nav></body></html>
