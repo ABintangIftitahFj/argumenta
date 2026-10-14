@@ -31,3 +31,6 @@ jobs:
 
       - name: Build application image
         run: docker build --tag argumenta:ci .
+
+      - name: Run test suite
+        run: docker run --rm argumenta:ci php artisan test

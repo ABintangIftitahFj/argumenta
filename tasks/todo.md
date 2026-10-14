@@ -91,10 +91,10 @@ Legend: `[ ]` belum selesai, `[x]` selesai, `[-]` diblokir.
 
 ## F11 — Release `prod` to `main`
 
-- [ ] **Acceptance:** Foundation, core flow, speech MVP, quota, and security checkpoints pass.
-- [ ] **Acceptance:** Production environment and deployment config are documented.
-- [ ] **Verification:** Full test suite and production build pass.
-- [ ] **Verification:** Review `prod` diff before merge.
+- [x] **Acceptance:** Foundation, core flow, speech MVP, quota, and security checkpoints pass.
+- [x] **Acceptance:** Production environment and deployment config are documented.
+- [x] **Verification:** Full test suite and production build pass.
+- [x] **Verification:** Review `prod` diff before merge.
 - [ ] **Git:** Merge `prod` into `main`, push `main`, verify CI.
 
 ## Checkpoints
@@ -121,4 +121,4 @@ Legend: `[ ]` belum selesai, `[x]` selesai, `[-]` diblokir.
 
 - [x] F9 and F10 acceptance complete.
 - [x] Security and quota tests pass.
-- [ ] `prod` approved for merge to `main`.
+- [x] `prod` approved for merge to `main`.

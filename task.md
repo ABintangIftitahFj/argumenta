@@ -26,14 +26,13 @@ Source: [plan/prd.md](plan/prd.md)
 
 ## Current execution
  
-- Task aktif: `F10 — Authorization and observability` [DONE] -> Transisi ke `F11 — Release prod to main`.
-- Authorization and observability (F10):
-  - Strict ownership authorization across debate sessions, speech recordings, prep briefs, evaluations, and transcript corrections.
-  - Private audio stream endpoint returning 403 on mismatched debater access.
-  - Explicit UI error handling via `resources/js/Pages/Error.vue` with Indonesian/English support, mobile touch targets >= 44px, and structured error reporting in `bootstrap/app.php`.
-  - Security warning and audit log entries on unauthorized access attempts.
-  - Verification: 58 tests passed (473 assertions) across full test suite.
-- Next Task: `F11 — Release prod to main`.
+- Task aktif: `F11 — Release prod to main` [IN_PROGRESS].
+- Release Preparation (F11):
+  - Documented production environment configuration (`.env.example`) including database, queues, private recordings disk, S3/R2 storage, and Gemini/SumoPod AI provider keys.
+  - Authored comprehensive `README.md` and `docs/deployment.md` covering Dockerized deployment, cPanel/Linux server operations, Supervisor/Cron queue setups, directory permissions, and health verification.
+  - Updated CI workflow `.github/workflows/push.yml` to execute automated test suite in Docker on push.
+  - Full test suite verified: 58 passed (473 assertions) in Docker container.
+  - Ready for merge to `main` and release push.
 
 
 
