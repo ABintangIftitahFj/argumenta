@@ -4,6 +4,8 @@ import { computed, ref } from 'vue';
 
 const page = usePage();
 const appName = computed(() => (page.props as any).appName || 'Argumenta');
+const auth = computed(() => (page.props as any).auth);
+const user = computed(() => auth.value?.user);
 
 const currentPath = computed(() => {
     return page.url.split('?')[0];
@@ -36,9 +38,9 @@ const isCurrent = (href: string) => {
     return currentPath.value.startsWith(href);
 };
 
-const streakDays = ref(5);
-const currentXp = ref(560);
-const activeLanguage = ref<'id' | 'en'>('id');
+const streakDays = computed(() => user.value?.profile?.streak_count ?? 5);
+const currentXp = computed(() => user.value?.profile?.total_xp ?? 560);
+const activeLanguage = ref<'id' | 'en'>(user.value?.profile?.language || 'id');
 
 const toggleLanguage = (lang: 'id' | 'en') => {
     activeLanguage.value = lang;
@@ -116,17 +118,44 @@ const toggleLanguage = (lang: 'id' | 'en') => {
 
             <!-- Sidebar User Card & Footer -->
             <div class="p-3 flex flex-col gap-2 border-t border-border-clean/50">
-                <div class="p-3 rounded-2xl bg-surface-subtle flex flex-col gap-2">
-                    <div class="flex items-center gap-3">
-                        <div class="relative w-9 h-9 rounded-full bg-primary text-white flex items-center justify-center shrink-0">
-                            <span class="material-symbols-outlined text-lg" aria-hidden="true">person</span>
-                            <span class="absolute -bottom-0.5 -right-0.5 w-3 h-3 rounded-full bg-primary-container ring-2 ring-surface-white" title="Aktif"></span>
+                <!-- Authenticated User -->
+                <div v-if="user" class="p-3 rounded-2xl bg-surface-subtle flex flex-col gap-2">
+                    <div class="flex items-center justify-between gap-2">
+                        <div class="flex items-center gap-2.5 min-w-0">
+                            <div class="relative w-9 h-9 rounded-full bg-primary text-white flex items-center justify-center shrink-0">
+                                <span class="material-symbols-outlined text-lg" aria-hidden="true">person</span>
+                                <span class="absolute -bottom-0.5 -right-0.5 w-3 h-3 rounded-full bg-primary-container ring-2 ring-surface-white" title="Aktif"></span>
+                            </div>
+                            <div class="flex flex-col min-w-0">
+                                <span class="text-xs font-bold text-on-surface truncate">{{ user.name }}</span>
+                                <span class="text-[11px] text-text-muted capitalize truncate">{{ user.profile?.skill_level || 'Novice' }}</span>
+                            </div>
                         </div>
-                        <div class="flex flex-col min-w-0">
-                            <span class="text-xs font-bold text-on-surface truncate">Debater</span>
-                            <span class="text-[11px] text-text-muted truncate">Level 1 • Novice</span>
-                        </div>
+
+                        <Link
+                            href="/logout"
+                            method="post"
+                            as="button"
+                            class="p-1.5 rounded-xl text-text-muted hover:text-error hover:bg-surface-white transition-all min-h-[36px] min-w-[36px] flex items-center justify-center focus-visible:outline-2 focus-visible:outline-primary-container"
+                            title="Keluar"
+                        >
+                            <span class="material-symbols-outlined text-base">logout</span>
+                        </Link>
                     </div>
+                </div>
+
+                <!-- Guest State -->
+                <div v-else class="p-3 rounded-2xl bg-surface-subtle flex items-center justify-between gap-2">
+                    <div class="flex flex-col min-w-0">
+                        <span class="text-xs font-bold text-on-surface">Mode Tamu</span>
+                        <span class="text-[11px] text-text-muted">Simpan progresmu</span>
+                    </div>
+                    <Link
+                        href="/login"
+                        class="px-3 py-1.5 rounded-xl bg-primary-container text-white text-xs font-bold hover:bg-primary transition-all min-h-[36px] flex items-center justify-center focus-visible:outline-2 focus-visible:outline-primary-container"
+                    >
+                        Masuk
+                    </Link>
                 </div>
 
                 <div class="flex items-center justify-between px-2 py-1 text-xs text-text-muted">
@@ -204,6 +233,27 @@ const toggleLanguage = (lang: 'id' | 'en') => {
                         EN
                     </button>
                 </div>
+
+                <!-- Guest Login / Authenticated Profile Button -->
+                <template v-if="!user">
+                    <Link
+                        href="/login"
+                        class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-primary-light text-primary text-xs font-bold hover:bg-primary hover:text-white transition-all min-h-[36px] focus-visible:outline-2 focus-visible:outline-primary-container"
+                    >
+                        <span class="material-symbols-outlined text-sm">login</span>
+                        <span>Masuk</span>
+                    </Link>
+                </template>
+                <template v-else>
+                    <Link
+                        href="/profile"
+                        class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-subtle border border-border-clean text-on-surface text-xs font-bold hover:bg-surface-dim transition-all min-h-[36px] focus-visible:outline-2 focus-visible:outline-primary-container"
+                        :title="`Profil: ${user.name}`"
+                    >
+                        <span class="material-symbols-outlined text-sm text-primary">person</span>
+                        <span class="truncate max-w-[100px]">{{ user.name }}</span>
+                    </Link>
+                </template>
 
                 <!-- AI Coach Quick Action Button (Desktop Only) -->
                 <Link

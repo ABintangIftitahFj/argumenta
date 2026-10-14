@@ -26,10 +26,12 @@ Source: [plan/prd.md](plan/prd.md)
 
 ## Current execution
 
-- Task aktif: `F2 — App shell` [DONE] -> Siap checkpoint Foundation & lanjut `F3 — Account and onboarding`.
-- Foundation (F1): Lulus 100% di lokal dan CI GitHub Actions (Run 38592280494 lulus).
-- App Shell (F2):
-  - Responsive app shell (Mobile bottom navigation + Desktop sidebar): Home, Learn, Practice, Coach, Progress, Profile.
-  - Duolingo-inspired theme palette (Teal green `#20B87A`, accent orange, lime, cream background `#F9FAF3`), touch targets minimal 44px (`min-h-[44px] min-w-[44px]`).
-  - Aksesibilitas: skip-link ke `#main-content`, `prefers-reduced-motion: reduce`, focus-visible indicators.
-  - Verification: `npm run build` sukses, `docker run --rm argumenta:ci php artisan test` (7 tests, 84 assertions passed).
+- Task aktif: `F3 — Account and onboarding` [DONE] -> Melanjutkan ke `F4 — Learning path`.
+- App Shell (F2): Lulus 100% di lokal dan CI GitHub Actions (Run 38593751797 lulus).
+- Account & Onboarding (F3):
+  - Model `User` + `Profile` (1:1 relation), migration `profiles` table.
+  - Controllers: `RegisterController`, `LoginController`, `OnboardingController`.
+  - Vue Pages: `Auth/Register.vue`, `Auth/Login.vue`, `Onboarding/Setup.vue` (4-step interactive wizard).
+  - AppLayout dynamic state: auth/guest detection, user card, logout action.
+  - Dependencies: added `fakerphp/faker` & `mockery/mockery` for robust Pest testing.
+  - Verification: `npm run build` sukses, `docker run --rm argumenta:ci php artisan test` (19 tests, 155 assertions passed).

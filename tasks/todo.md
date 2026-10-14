@@ -28,11 +28,11 @@ Legend: `[ ]` belum selesai, `[x]` selesai, `[-]` diblokir.
 
 ## F3 — Account and onboarding
 
-- [ ] **Acceptance:** User can register, log in, and log out.
-- [ ] **Acceptance:** Onboarding stores language, goal, level, and preferred format.
-- [ ] **Verification:** Auth and validation tests pass.
-- [ ] **Knowledge graph:** Mark F3 `DONE`; unblock F4 and F10.
-- [ ] **Git:** Commit and push `prod`; CI passes.
+- [x] **Acceptance:** User can register, log in, and log out.
+- [x] **Acceptance:** Onboarding stores language, goal, level, and preferred format.
+- [x] **Verification:** Auth and validation tests pass.
+- [x] **Knowledge graph:** Mark F3 `DONE`; unblock F4 and F10.
+- [x] **Git:** Commit and push `prod`; CI passes.
 
 ## F4 — Learning path
 
