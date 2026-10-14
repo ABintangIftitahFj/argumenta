@@ -95,7 +95,7 @@ Legend: `[ ]` belum selesai, `[x]` selesai, `[-]` diblokir.
 - [x] **Acceptance:** Production environment and deployment config are documented.
 - [x] **Verification:** Full test suite and production build pass.
 - [x] **Verification:** Review `prod` diff before merge.
-- [ ] **Git:** Merge `prod` into `main`, push `main`, verify CI.
+- [x] **Git:** Merge `prod` into `main`, push `main`, verify CI.
 
 ## Checkpoints
 
@@ -103,19 +103,19 @@ Legend: `[ ]` belum selesai, `[x]` selesai, `[-]` diblokir.
 
 - [x] F1 and F2 acceptance complete.
 - [x] Tests and build pass.
-- [ ] Human review before F3.
+- [x] Human review before F3.
 
 ### Core navigation
 
 - [x] F3, F4, and F5 acceptance complete.
 - [x] Auth-to-practice setup flow works.
-- [ ] Human review before F6.
+- [x] Human review before F6.
 
 ### Speech MVP
 
 - [x] F6, F7, and F8 acceptance complete.
 - [x] Recording-to-feedback flow works.
-- [ ] Human review before F9.
+- [x] Human review before F9.
 
 ### Release readiness
 
