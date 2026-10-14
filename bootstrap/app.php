@@ -20,4 +20,14 @@ return Application::configure(basePath: dirname(__DIR__))
         $exceptions->shouldRenderJsonWhen(
             fn (Request $request) => $request->is('api/*') || $request->expectsJson(),
         );
+
+        $exceptions->report(function (\Symfony\Component\HttpKernel\Exception\HttpExceptionInterface $e) {
+            \Illuminate\Support\Facades\Log::warning('Security / HTTP Exception occurred', [
+                'status' => $e->getStatusCode(),
+                'message' => $e->getMessage(),
+                'url' => request()->fullUrl(),
+                'user_id' => auth()->id(),
+                'ip' => request()->ip(),
+            ]);
+        });
     })->create();

@@ -107,6 +107,11 @@ class PracticeSetupController extends Controller
     {
         $user = $request->user();
         if ($user && $session->user_id !== $user->id) {
+            \Illuminate\Support\Facades\Log::warning('Unauthorized access attempt to debate session.', [
+                'session_id' => $session->id,
+                'user_id' => $user->id,
+                'action' => 'practice.prepare',
+            ]);
             abort(403, 'Akses sesi latihan tidak sah.');
         }
 

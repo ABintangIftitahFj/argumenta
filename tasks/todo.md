@@ -83,11 +83,11 @@ Legend: `[ ]` belum selesai, `[x]` selesai, `[-]` diblokir.
 
 ## F10 — Authorization and observability
 
-- [ ] **Acceptance:** Users cannot access another user's audio or report.
-- [ ] **Acceptance:** Errors produce explicit UI state and server logs.
-- [ ] **Verification:** Authorization tests pass for positive and negative cases.
-- [ ] **Knowledge graph:** Mark F10 `DONE`; unblock release checkpoint.
-- [ ] **Git:** Commit and push `prod`; CI passes.
+- [x] **Acceptance:** Users cannot access another user's audio or report.
+- [x] **Acceptance:** Errors produce explicit UI state and server logs.
+- [x] **Verification:** Authorization tests pass for positive and negative cases.
+- [x] **Knowledge graph:** Mark F10 `DONE`; unblock release checkpoint.
+- [x] **Git:** Commit and push `prod`; CI passes.
 
 ## F11 — Release `prod` to `main`
 
@@ -119,6 +119,6 @@ Legend: `[ ]` belum selesai, `[x]` selesai, `[-]` diblokir.
 
 ### Release readiness
 
-- [ ] F9 and F10 acceptance complete.
-- [ ] Security and quota tests pass.
+- [x] F9 and F10 acceptance complete.
+- [x] Security and quota tests pass.
 - [ ] `prod` approved for merge to `main`.
